@@ -167,3 +167,160 @@
         ```
 
 ## Class与Style绑定
+1. 绑定HTML Class
+    - 对象语法
+        - 一个对象，一个或多个class
+
+            `<div v-bind:class="{ active: isActive }"></div>`
+            
+            `<div class="static" v-bind:class="{ active: isActive, 'text-danger': hasError }"></div>`
+
+            ```
+            data: {
+                isActive: true,
+                hasError: false
+            }
+            ```
+        - 在模板中定义数据对象
+
+            `<div v-bind:class="classObject"></div>`
+
+            ```
+            data: {
+            classObject: {
+                active: true,
+                'text-danger': false
+            }
+            }
+            ```
+        - 绑定一个返回对象的计算属性
+
+            `<div v-bind:class="classObject"></div>`
+
+            ```
+            data: {
+                isActive: true,
+                error: null
+            },
+            computed: {
+                classObject: function () {
+                    return {
+                        active: this.isActive && !this.error,
+                        'text-danger': this.error && this.error.type === 'fatal'
+                    }
+                }
+            }
+            ```
+
+    - 数组语法
+      - 把一个数组传给 v-bind:class
+
+        `<div v-bind:class="[activeClass, errorClass]"></div>`
+        ```
+        data: {
+        activeClass: 'active',
+        errorClass: 'text-danger'
+        }
+        ```
+      - 用三元表达式根据条件切换列表中的 class
+
+        `<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>`
+
+      - 在数组语法中也可以使用对象语法：
+        
+        `<div v-bind:class="[{ active: isActive }, errorClass]"></div>`
+
+    - 用在组件上
+
+        当在一个自定义组件上使用 class 属性时，这些类将被添加到该组件的根元素上面。这个元素上已经存在的类不会被覆盖。
+
+        例如，如果你声明了这个组件：
+
+            ```Vue.component('my-component', {
+            template: '<p class="foo bar">Hi</p>'
+            })```
+        然后在使用它的时候添加一些 class：
+
+            `<my-component class="baz boo"></my-component>`
+        HTML 将被渲染为:
+
+            `<p class="foo bar baz boo">Hi</p>`
+
+        对于带数据绑定 class 也同样适用：
+
+            `<my-component v-bind:class="{ active: isActive }"></my-component>`
+        当 isActive 为 truthy 时，HTML 将被渲染成为：
+
+            `<p class="foo bar active">Hi</p>`
+
+
+        > #### ***truthy***:
+        > 
+        > 在 JavaScript 中，Truthy (真值)指的是在 布尔值 上下文中转换后的值为真的值。所有值都是真值，除非它们被定义为 falsy (即除了 false，0，""，null，undefined 和 NaN 外)。
+        > 
+        > JavaScript 在布尔值上下文中使用强制类型转换（coercion）。
+        > 
+        > JavaScript 中的真值示例如下（将被转换为 true，if 后的代码段将被执行）：
+        > 
+        > ```if (true)
+        > if ({})
+        > if ([])
+        > if (42)
+        > if ("foo")
+        > if (new Date())
+        > if (-42)
+        > if (3.14)
+        > if (-3.14)
+        > if (Infinity)
+        > if (-Infinity)
+        > ```
+        > <br/>
+
+
+
+2. 绑定内联式样
+    - 对象语法
+
+        v-bind:style 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。CSS 属性名可以用驼峰式 (camelCase) 或短横线分隔 (kebab-case，记得用单引号括起来) 来命名：
+
+        `<div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>`
+
+        ```
+        data: {
+            activeColor: 'red',
+            fontSize: 30
+        }
+        ```
+
+        直接绑定到一个样式对象通常更好，这会让模板更清晰：
+
+        `<div v-bind:style="styleObject"></div>`
+
+        ```
+        data: {
+        styleObject: {
+            color: 'red',
+            fontSize: '13px'
+        }
+        }
+        ```
+
+        同样的，对象语法常常结合返回对象的计算属性使用。
+
+
+    - 数组语法
+
+        v-bind:style 的数组语法可以将多个样式对象应用到同一个元素上：
+
+        `<div v-bind:style="[baseStyles, overridingStyles]"></div>`
+
+    - 自动添加前缀
+
+        当 v-bind:style 使用需要添加浏览器引擎前缀的 CSS 属性时，如 transform，Vue.js 会自动侦测并添加相应的前缀。
+
+    - 多重值
+
+        从 2.3.0 起你可以为 style 绑定中的属性提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：
+
+        `<div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>`
+        这样写只会渲染数组中最后一个被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 display: flex。
