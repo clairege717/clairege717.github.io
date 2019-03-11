@@ -26,11 +26,31 @@
                     return {
                         msg: 'Welcome to Your Vue.js App'
                     }
+                },
+                components:{
+                    // 挂载组件
+                    // 组件名称不能与HTML标签重复
+                },
+                methods:{
+                    // 数据操作
+                },
+                mounted:{
+                    // 生命周期函数，vue页面刷新就会触发的方法
                 }
             }
         </script>
         ```
       - style
+
+        ```
+        <style lang="scss" scoped>
+            /*css  局部作用域  scoped*/
+            h2{
+                color:red
+            }
+        </style>
+        ```
+
         - CSS
         - SCSS
         - SASS
@@ -45,6 +65,7 @@
   - webpack.config.js
 
 ## Vue模板语法
+##### {{}},v-text,v-html,v-bind:[attribute],v-on[event],v-for,v-if
 1. #### 插值
    - 文本：**{{}}** **v-text**
   
@@ -166,7 +187,8 @@
         <a @click="doSomething">...</a>
         ```
 
-## Class与Style绑定
+## Class与Style绑定(v-bind:class,v-bind:style)
+
 1. 绑定HTML Class
     - 对象语法
         - 一个对象，一个或多个class
@@ -324,3 +346,435 @@
 
         `<div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>`
         这样写只会渲染数组中最后一个被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 display: flex。
+
+## 双向数据绑定-MVVM
+
+MVVM：M-model，V-view
+
+model改变会影响view，view反过来影响model
+
+双向数据绑定（v-model）必须在表单（`<input>`、`<textarea>` 及 `<select>`等表单元素）中使用
+
+v-model 在内部使用不同的属性为不同的输入元素并抛出不同的事件：
+
+- text 和 textarea 元素使用 value 属性和 input 事件；
+- checkbox 和 radio 使用 checked 属性和 change 事件；
+- select 字段将 value 作为 prop 并将 change 作为事件。
+
+## 通过ref获取DOM节点
+
+`<input type='text' ref='userinfo'>`
+
+```
+methods:{
+    getInputValue(){
+        //  获取ref定义的DOM节点
+        console.log(this.$refs.userinfo);
+        console.log(this.$refs.userinfo.value);// DOM属性
+    }
+}
+```
+
+## Vue事件
+
+- v-on:click='getInputValue()'
+- @click='getInputValue()'
+- 事件对象：@click='eventFn($event)' data-aid='aaa'
+
+    ```
+    methods:{
+        eventFn(e){
+            console.log(e);
+            console.log(e.srcElement.dateset);
+        }
+    }
+    ```
+
+
+## 封装storage
+```
+// storage.js
+//封装操作localstorage本地存储的方法   模块化的文件
+// nodejs  基础
+
+var storage={
+    set(key,value){
+        localStorage.setItem(key, JSON.stringify(value));
+    },
+    get(key){
+        return JSON.parse(localStorage.getItem(key));
+    },remove(key){
+        localStorage.removeItem(key);
+    }
+}
+export default storage;
+
+```
+
+import storage from 'storage.js'
+
+## Vue组件
+
+组件是可复用的 Vue 实例，且带有一个名字
+
+一个组件的 data 选项必须是一个函数，因此每个实例可以维护一份被返回对象的独立的拷贝
+
+通常一个应用会以一棵嵌套的组件树的形式来组织
+
+全局注册和局部注册
+
+```
+// 定义一个名为 button-counter 的新组件
+Vue.component('button-counter', {
+  data: function () {
+    return {
+      count: 0
+    }
+  },
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+})
+```
+
+```
+<div id="components-demo">
+  <button-counter></button-counter>
+</div>
+```
+
+1. 引入组件
+
+    import Button from 'button-counter.vue'
+2. 挂载组件
+
+    components:{
+        'v-button-counter':Button
+    }
+
+3. 在模板中使用
+   
+    `<v-button-counter></v-button-counter>`
+
+
+## 生命周期函数（生命周期钩子函数）
+
+组件挂载、组件更新、组件销毁的时候触发的一系列方法，这些方法就叫做生命周期函数。
+
+```
+beforeCreate(){   
+},
+created(){   
+},
+beforeMount(){   
+},
+mounted(){   
+},
+beforeUpdate(){   
+},
+updated(){   
+},
+beforeDestroy(){   
+},
+destroyed(){   
+}
+```
+
+
+## 请求数据
+#### 请求数据的模板
+- vue-resource 官方提供的vue插件
+  - 需要安装vue-resource模块，  注意加上  --save
+
+    `npm install vue-resource --save /  cnpm install vue-resource --save`
+
+  - main.js引入 vue-resource
+
+    `import VueResource from 'vue-resource';`
+
+  - main.js  
+    `Vue.use(VueResource);`
+
+
+  - 在组件里面直接使用
+    ```
+        this.$http.get(地址).then(function(){
+        })
+    ```
+- axios
+  - 安装  cnpm  install  axios --save
+  - 哪里用哪里引入axios
+    ```
+    Axios.get(api).then((response)=>{
+        this.list=response.data.result;
+    }).catch((error)=>{
+        console.log(error);
+
+    })
+    ```
+- fetch-jsonp
+
+
+## 组件间传值
+### 父子组件传值
+- 父组件给子组件传值
+  - 父组件调用子组件的时候 绑定动态属性
+
+    `<v-header :title="title"></v-header>`
+  - 在子组件里面通过 props接收父组件传过来的数据
+
+    props:['title']
+
+    props:{
+        'title':String      
+    }
+
+  - 直接在子组件里面使用
+
+- 父组件主动获取子组件的数据和方法：
+  - 调用子组件的时候定义一个ref
+
+       `<v-header ref="header"></v-header>`
+  - 在父组件里面通过
+    ```
+    this.$refs.header.属性
+    this.$refs.header.方法
+    ```
+
+- 子组件主动获取父组件的数据和方法：  
+
+    ```
+    this.$parent.数据
+    this.$parent.方法
+    ```
+
+### 非父子组件间传值
+- 新建一个js文件   然后引入vue  实例化vue  最后暴露这个实例
+    VueEvent.js
+    
+    ```
+    import Vue from 'vue';
+
+    var VueEvent = new Vue();
+    
+    export default VueEvent;
+    ```
+- 在要广播的地方引入刚才定义的实例
+    ```
+    import VueEvent from '../model/VueEvent.js';
+
+    ```
+- 通过 VueEmit.$emit('名称','数据')
+
+    ```
+        methods:{
+            emitHome(){ 
+
+                //广播
+
+                VueEvent.$emit('to-home',this.msg)
+            }
+
+        }
+    ```
+
+- 在接收收数据的地方通过 $om接收广播的数据
+    ```
+        mounted(){
+
+            VueEvent.$on('to-news',function(data){
+                console.log(data);
+            })
+        }
+    ```
+
+
+## Vue路由
+
+- vue 路由配置
+  - 安装
+
+    npm install vue-router  --save   / cnpm install vue-router  --save
+  - 引入并Vue.use(VueRouter)   (main.js)
+    ```
+		import VueRouter from 'vue-router'
+
+		Vue.use(VueRouter)
+    ```
+  - 配置路由
+    - 创建组件，引入组件
+
+    ```
+        import Home from './components/Home.vue';
+        import News from './components/News.vue';
+
+    ```
+    - 配置路由   注意：名字
+    ```
+    const routes = [
+        { path: '/home', component: Home },
+        { path: '/news', component: News },
+
+        { path: '/content/:aid', component: Content },   /*动态路由*/
+
+        { path: '*', redirect: '/home' }   /*默认跳转路由*/
+    ]
+    ```
+
+    - 实例化VueRouter  注意：名字
+    ```
+    const router = new VueRouter({
+        routes // （缩写）相当于 routes: routes
+    })
+
+    ```
+
+
+    - 挂载路由
+    ```
+    new Vue({
+        el: '#app',
+        router,
+        render: h => h(App)
+    })
+    ```
+    - 在根组件的模板里使用路由
+
+        `<router-view></router-view> 放在 App.vue`
+
+    - 路由跳转
+
+	    `<router-link to="/foo">Go to Foo</router-link>`
+
+- vue 动态路由，get传值
+  - 不同路由传值：动态路由
+    - 配置路由
+      
+      `{ path: '/content/:aid', component: Content },   /*动态路由*/`
+
+    - 在对应页面，获取动态路由传值
+
+      ```
+          mounted(){
+              console.log(this.$route.params);  /*获取动态路由传值*/
+
+          }
+      ```
+
+    - 
+  - get传值
+
+    `<router-link to="/pcontent?aid=123">Go to Foo</router-link>`
+    ```
+    mounted(){
+        //获取get传值
+        console.log(this.$route.query);
+    }
+    ```
+
+- 路由结合请求数据
+
+    ```
+        mounted(){
+
+               // console.log(this.$route.params);  /*获取动态路由传值*/
+
+                var aid=this.$route.params.aid;
+
+                //调用请求数据的方法
+
+                this.requestData(aid);
+
+        },
+        methods:{
+
+            requestData(aid){
+
+                //get请求如果跨域的话 后台php java 里面要允许跨域请求
+
+                var api='http://www.phonegap100.com/appapi.php?a=getPortalArticle&aid='+aid;
+
+
+                this.$http.get(api).then((response)=>{
+                        console.log(response);
+
+                        this.list=response.body.result[0];
+
+                },(err)=>{
+
+                    console.log(err)
+                })
+            }
+        }
+    ```
+
+- 路由编程式导航
+
+  - 第一种跳转方式
+    ```
+        // this.$router.push({ path: 'news' })
+        // this.$router.push({ path: '/content/495' });
+    ```
+
+  - 另一种跳转方式
+    ```
+        //{ path: '/news', component: News,name:'news' },
+        // router.push({ name: 'news', params: { userId: 123 }})
+        this.$router.push({ name: 'news'})
+    ```
+
+- hash模式路由
+
+    ```
+        const router = new VueRouter({
+            mode: 'history',   /*hash模式改为history*/
+            routes // （缩写）相当于 routes: routes
+        })
+    ```
+- 路由的嵌套
+  - 配置路由
+   ```
+   {
+      path: '/user',
+
+      component: User,
+      children:[
+        { path: 'useradd', component: UserAdd },
+        { path: 'userlist', component: Userlist }
+      ]
+    }
+    ```
+  - 父路由里面配置子路由显示的地方   `<router-view></router-view>`
+
+- 路由模块化
+
+    `router.js`
+
+    ```
+    import Vue from 'vue';
+
+    //配置路由
+    import VueRouter from 'vue-router';
+    Vue.use(VueRouter);
+
+    //1.创建组件
+    import Home from '../components/Home.vue';
+
+    //2.配置路由   注意：名字
+
+    const routes = [
+        { path: '/home', component: Home },
+        { path: '*', redirect: '/home' }   /*默认跳转路由*/
+    ]
+
+    //3.实例化VueRouter  注意：名字
+
+    const router = new VueRouter({
+        mode: 'history',   /*hash模式改为history*/
+        routes // （缩写）相当于 routes: routes
+    })
+
+    //5 <router-view></router-view> 放在 App.vue
+
+    export default router;
+
+    ```
+
