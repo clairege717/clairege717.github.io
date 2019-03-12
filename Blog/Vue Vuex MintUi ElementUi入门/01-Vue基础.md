@@ -562,7 +562,7 @@ destroyed(){
     import VueEvent from '../model/VueEvent.js';
 
     ```
-- 通过 VueEmit.$emit('名称','数据')
+- 通过 VueEvent.$emit('名称','数据')
 
     ```
         methods:{
@@ -576,7 +576,7 @@ destroyed(){
         }
     ```
 
-- 在接收收数据的地方通过 $om接收广播的数据
+- 在接收收数据的地方通过 $on接收广播的数据
     ```
         mounted(){
 
