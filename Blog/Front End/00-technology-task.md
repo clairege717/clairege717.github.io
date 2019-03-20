@@ -1,0 +1,78 @@
+# Web前端开发技术栈
+
+- ## Web基础
+  - ### HTML
+  - ### CSS
+  - ### JavaScript
+- ## CSS预处理
+  - ### LESS
+  - ### SCSS
+  - ### Stylus
+- ## 标准
+  - ### W3C
+- ## 库/框架
+  - ### 前端技术框架
+    - Angular
+    - Vue.js
+    - React
+    - jQuery
+  - ### 前端UI框架
+    - Bootstrap
+    - LayerUI
+    - Element UI
+    - Mint UI(移动端)
+    - jQuery Mobile(移动端)
+- ## 中间语言
+  - ### TypeScript
+  - ### CoffeeScript
+- ## 代码构建工具
+  - ### Grunt
+  - ### Gulp
+  - ### WebPack
+- ## 包管理工具
+  - ### npm
+  - ### Bower
+  - ### cnpm
+  - ### yarn
+- ## 桌面应用开发
+  - ### Electron
+- ## 移动应用开发
+  - ### React Native
+  - ### Ionic
+- ## 数据可视化（图表、地图）
+  - ### Echarts
+  - ### Antv
+  - ### WebGL
+  - ### CSS3动画
+  - ### d3
+  - ### Google Map
+  - ### 百度地图
+  - ### 高德地图
+  - ### 腾讯地图
+  - ### 天地图
+- ## 数据交互
+  - ### AJAX
+  - ### Axios
+  - ### Mock
+- ## 最佳实践
+  - ### SEO
+  - ### CDN
+- ## 质量控制
+- ## 测试
+- ## 协议
+- ## 浏览器
+- ## 渲染引擎
+- ## 脚步引擎
+- ## 编译任务
+  - ### 精简
+  - ### 编译
+  - ### 合并
+  - ### 混淆
+  - ### 图像优化
+  - ### 单元测试
+- ## 安全
+  - ### CORS
+- ## 代码托管
+- ## 团队办公
+- ## 技术社区
+
