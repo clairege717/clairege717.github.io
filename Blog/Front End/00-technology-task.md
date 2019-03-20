@@ -1,5 +1,8 @@
 # Web前端开发技术栈
 
+整理引用自[web前端技术体系大全(sf)](https://segmentfault.com/a/1190000018505284?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly#articleHeader9)
+,[WebFrontEndStack(github)](https://github.com/unruledboy/WebFrontEndStack)
+
 - ## Web基础
   - ### HTML
   - ### CSS
