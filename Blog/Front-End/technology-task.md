@@ -34,17 +34,36 @@
   - ### 前端技术框架
     - Angular
     - Vue.js
+      - vue-resource
+      - vue-form
+      - vue-quil-editor(富文本编辑器)
+      - vuex
+      - vue-router
+      - axios
+      - plupload(文件上传)
     - ~~AngularJS~~
     - ~~React~~
   - ### 前端UI框架
     - Bootstrap
     - Element UI
+      - el-row,el-col
+      - el-slider
+      - el-table
+      - el-dropdown
+      - el-dialog
+      - el-pagenation
+      - el-form
+    - [Vuetify(Material Design Component Framework)](https://vuetifyjs.com/zh-Hans/)
     - Mint UI(移动端)
     - jQuery Mobile(移动端)
     - LayerUI
     - Material UI
     - Amaze UI
+    - Ant Design
     - ~~Foundation~~
+  - ### 服务端渲染框架
+    - Next.js(React)
+    - [Nuxt.js(Vue.js)](https://zh.nuxtjs.org/)
 - ## 五、中间语言
   - ### TypeScript
   - ### ~~CoffeeScript~~
@@ -121,9 +140,10 @@
   - ### Blink/prev. Presto(Opera)
   - ### EdgeHTML(Edge)
 - ## 十九、脚本引擎
+  - ### V8(Chrome/Opera/Nodejs/MongoDB)
+    - Node.js
   - ### JScript(IE8-/ASP)
   - ### Chakra(IE9+/Edge)
-  - ### V8(Chrome/Opera/Nodejs/MongoDB)
   - ### SpiderMonkey(Firefox)
   - ### JavaScriptCore(Safari)
 - ## 二十、运行时
@@ -170,4 +190,5 @@
   - ### ~~gitlab~~
 - ## 二十七、七七八八
   - ### 微信小程序
+  - ### i18n
 
