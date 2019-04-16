@@ -26,7 +26,7 @@ Vue灵活、简单，很多中小型企业里面用的非常多。
 1. 关于Vue CLI3和Vue CLI2以及Vue 2.x和Vue 3.x
 
     Vue CLI是安装Vue的脚手架工具，也是官方命令行工具，可以用命令快速创建项目。
-    注意：Vue CLI3是Vue CLI2的升级版本，并不少Vue3.0。Vue CLI3与老版本的Vue CLI创建项目的方式不一样，创建项目的用法是一样的。Vue CLI3在编译速度上做了优化。
+    注意：Vue CLI3是Vue CLI2的升级版本，并不是Vue3.0。Vue CLI3与老版本的Vue CLI创建项目的方式不一样，创建项目的用法是一样的。Vue CLI3在编译速度上做了优化。
 
 2. 关于Vue CLI老版本安装及创建项目（目前Vue CLI3仍未发布，老版本仍可使用）
    - 搭建Vue的开发环境，安装Vue脚手架工具，官方命令行工具
@@ -61,3 +61,12 @@ Vue灵活、简单，很多中小型企业里面用的非常多。
       - npm run serve
     - 编译
       - npm run build
+
+4. Vue CLI 3.x和2.x之间桥接工具
+
+  ```
+  npm install -g @vue/cli-init
+  # `vue init` 的运行效果将会跟 `vue-cli@2.x` 相同
+  vue init webpack my-project
+  ```
+

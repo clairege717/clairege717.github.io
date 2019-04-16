@@ -398,3 +398,80 @@
 
 
 
+
+
+
+## Angular中的DOM操作
+
+- 原生JS进行Angular DOM操作
+
+    ```
+    // 视图加载完成以后触发的方法    dom加载完成  （建议把dom操作放在这个里面）  
+    ngAfterViewInit(){
+        var boxDom:any=document.getElementById('box'); boxDom.style.color='red';
+    }
+    ```
+
+    ```
+    .component.html:
+    <div id="box1" *ngIf="flag">
+
+        this is box1 
+        
+    </div>
+
+    .component.ts:
+    ngOnInit() {
+        // 组件和指令初始化完成   并不是真正的dom加载完成
+        let oBox:any=document.getElementById('box');
+
+        console.log(oBox.innerHTML);
+        oBox.style.color="red";
+        // 获取不到dom节点
+        /*
+        let oBox1:any=document.getElementById('box1');
+
+        console.log(oBox1.innerHTML);
+        oBox1.style.color="blue";
+        */
+       
+    }
+    ```
+
+- ViewChild进行Angular DOM操作
+
+    ```
+    import { Component ,ViewChild,ElementRef} from '@angular/core';
+
+    @ViewChild('myattr') myattr: ElementRef;
+        
+    <div #myattr></div>
+    
+    ngAfterViewInit(){
+        let attrEl = this.myattr.nativeElement;
+    }    
+
+    ```
+
+
+    ViewChild获取dom节点
+
+
+    1. 模板中给dom起一个名字
+      
+        ```
+        <div #myBox>我是一个dom节点</div>
+        ```
+
+    2. 在业务逻辑里面引入ViewChild
+
+        import { Component, OnInit,ViewChild} from '@angular/core';
+
+    3.  写在类里面    @ViewChild('myBox') myBox:any;
+
+    4. ngAfterViewInit生命周期函数里面获取dom
+
+        this.myBox.nativeElement
+
+
+- 
