@@ -66,8 +66,6 @@ div {
   display: grid;
   grid-gap: 0;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  border-left: 1px solid #e9e9e9;
-  border-top: 1px solid #e9e9e9;
 }
 .col-4 {
   grid-template-columns: repeat(4, 1fr);
@@ -89,6 +87,20 @@ div {
 .label-item.l-hover,
 .label-item:hover {
   background-color: #efefef;
+}
+.label-item:nth-child(1),
+.label-item:nth-child(2),
+.label-item:nth-child(3) {
+  border-top: 1px solid #e9e9e9;
+}
+.col-3 .label-item:nth-child(3n+1) {
+  border-left: 1px solid #e9e9e9;
+}
+.col-4 .label-item:nth-child(4) {
+  border-top: 1px solid #e9e9e9;
+}
+.col-4 .label-item:nth-child(4n+1) {
+  border-left: 1px solid #e9e9e9;
 }
 </style>
 
