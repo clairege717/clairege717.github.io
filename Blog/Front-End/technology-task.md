@@ -33,6 +33,7 @@
     - ~~MooTool~~
   - ### 前端技术框架
     - Angular
+      - ionic
     - Vue.js
       - vue-resource
       - vue-form
@@ -41,8 +42,8 @@
       - vue-router
       - axios
       - plupload(文件上传)
+    - React
     - ~~AngularJS~~
-    - ~~React~~
   - ### 前端UI框架
     - Bootstrap
     - Element UI
