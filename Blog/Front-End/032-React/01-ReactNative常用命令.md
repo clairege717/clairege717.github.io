@@ -88,3 +88,14 @@
 
         node_modules/react-native/scripts/ios-install-third-party.sh
 
+
+- No bundle URL present.  Make sure you're running a packager server or have included a .jsbundle file in your application bundle.
+
+    yarn install
+
+    - 删除 ios/build
+    - 重新下载node_modules
+
+- super undefined
+    
+    引用变量名写错
