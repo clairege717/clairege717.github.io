@@ -1,5 +1,12 @@
 # React Redux
 
+摘录整理自：
+- [在ReactNative中使用Redux简述](https://blog.csdn.net/sinat_30949835/article/details/79923134)
+- 阮一峰的网络日志
+  - [Redux 入门教程（一）：基本用法](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
+  - [Redux 入门教程（二）：中间件与异步操作](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)
+  - [Redux 入门教程（三）：React-Redux 的用法](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
+
 #### Redux特性
 
 - Single Source Of Truth
