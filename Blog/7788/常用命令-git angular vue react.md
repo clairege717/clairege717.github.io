@@ -97,6 +97,20 @@
     git merge jsfrontgroup/master  分支合并
 
 
+    #### git .gitignore忽略文件.DS_Store
+
+    .DS_Store
+
+    */.DS_Store
+
+    **如果是项目做到一半才开始加入.gitignore,则需要在commit所有已经修改文件后，执行以下命令保证.gitignore开始生效。**
+
+    git rm -r --cached .
+
+    git add .
+    
+    git commit -m 'update .gitignore'
+
 2. angular
 
     - @angular/cli
