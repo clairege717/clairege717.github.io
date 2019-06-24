@@ -39,6 +39,12 @@
 
     git checkout dev    切换到dev分支
 
+    git push origin --delete Chapater6   可以删除远程分支Chapater6
+
+    git branch -d Chapater8 可以删除本地分支
+    
+    git checkout -b Chapater6 切换分支
+
     git add [文件名] 添加待提交的文件
 
     git commit -m '日志信息' 提交
@@ -50,6 +56,10 @@
     git config --global user.name 'username'    修改用户名
     
     git config --global user.email 'email'  修改用户邮箱
+
+    git pull origin develop 将develop分支上的内容拉取到本地分支 
+    
+    git push origin dev-gyd:dev 将本地dev-gyd分支的代码提交到远程dev分支
 
     #### git fetch 合并远程仓库到本地
 
@@ -110,6 +120,10 @@
     git add .
     
     git commit -m 'update .gitignore'
+
+    git stash 缓存本地未提交代码（切换分支前使用）    
+    
+    git stash pop 导出缓存的未提交代码（切换分支后使用）  
 
 2. angular
 
