@@ -146,7 +146,23 @@
         ionic cordova build android
         
         ionic cordova emulate android
-    
+  
+        ionic4 新增了 prepare 命令，在使用 
+
+            ionic cordova platofrm add android/ios 
+
+        构建 android 或 ios 平台后，如果修改了代码，在 ionic3 中只要执行
+
+            ionic build 
+            
+        就可以应用改变，
+
+        但在 ionic4 中需要行执行 
+
+            ionic cordova prepare android/ios 
+            
+        命令才能将改变应用到平台中，当然在打包之前还是一样要执行 ionic build --prod 命令。
+  
     
 
 3. vue
@@ -177,3 +193,5 @@
         react-native init
 
         react-native run-ios(android)
+
+        react-native link 
