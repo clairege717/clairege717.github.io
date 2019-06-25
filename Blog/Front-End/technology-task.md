@@ -3,6 +3,8 @@
 部分整理引用自[web前端技术体系大全(sf)](https://segmentfault.com/a/1190000018505284?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly#articleHeader9)
 ,[WebFrontEndStack(github)](https://github.com/unruledboy/WebFrontEndStack)
 
+前端发展展望：可视化；工程化
+
 - ## 一、Web基础
   - ### HTML
     - DOM
@@ -43,6 +45,12 @@
       - axios
       - plupload(文件上传)
     - React
+      - react-cli
+      - redux
+      - react-router
+      - dva
+      - ssr
+      - next.js
     - ~~AngularJS~~
   - ### 前端UI框架
     - Bootstrap
@@ -70,6 +78,7 @@
   - ### ~~CoffeeScript~~
 - ## 六、代码构建工具
   - ### WebPack
+  - ### Babel
   - ### ~~Grunt~~
   - ### ~~Gulp~~
 - ## 七、包管理工具
@@ -143,6 +152,16 @@
 - ## 十九、脚本引擎
   - ### V8(Chrome/Opera/Nodejs/MongoDB)
     - Node.js
+      - 模块化
+      - 流
+      - Buffer
+      - 异步
+      - 进程与线程
+      - IO
+      - 网络
+    - MySQL
+    - MangoDB
+    - Redis
   - ### JScript(IE8-/ASP)
   - ### Chakra(IE9+/Edge)
   - ### SpiderMonkey(Firefox)
@@ -191,7 +210,15 @@
   - ### ~~gitlab~~
 - ## 二十七、七七八八
   - ### 微信小程序
+    - 开发模式
+    - flex布局
+    - 扫码
+    - 下拉刷新
+    - 轮播图
+    - 图片
+    - 支付API
   - ### i18n
+  - ### 
 - ## 二十八、实践
 
 
