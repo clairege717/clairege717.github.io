@@ -1,7 +1,7 @@
 # [29 | JavaScript语法（一）：在script标签写export为什么会抛错？](https://time.geekbang.org/column/article/87808?utm_source=time_web&utm_medium=menu)
 
 
-本节介绍JavaScript语法的一些基本规则
+本节介绍JavaScript语法的一些基本规则，JavaScript语法的顶层设计。
 
 ## 脚本和模块
 
@@ -309,7 +309,7 @@ function doSth(){
 
   JavaScript的指令序言是只有一个字符串直接量的表达式语句，它只能出现在脚本、模块和函数体的最前面。
 
-  
+
 
 
 
