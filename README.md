@@ -1,11 +1,249 @@
-# Claire_Ge 
-葛燕丹的个人博客（知识点记录、练习）
+# [如何更好的使用弹窗？](https://mp.weixin.qq.com/s/BiEPZUNh15Ec7F4fL28PCQ)
 
---------------------------------
+> 文章转载自公众号&nbsp;&nbsp;<img style="width:18px;height:18px;border-radius:50%" src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM4LSR7Zt3Lcdrk9aia3q8t0QjWYI96UODTy7sXZP10FNRQ/0"  alt="梓" align=center />&nbsp;&nbsp;小梓的设计笔记，作者 **小梓**
 
-## 一、Blog
-个人博客内容
 
-## 二、Vue
-vue练习
+弹窗在设计中运用的非常广泛，基本上每个应用都会涉及到。恰好这段时间我也在整理公司设计组件这一块，所以就想总结分享一下。
 
+设计师都会使用弹窗，但对于弹窗背后的分类及运用可能还不是特别了解，在写这篇文章之前，我查看了很多应用及资料，所以下面会有大量的案例，相信大家看完可以对弹窗的认识更明确，做设计规范的时候也能有自己的想法。
+
+现在的弹窗分为两种，一种是模态弹窗（重提示），一种是非模态弹窗（轻提示）。
+
+常见的模态弹窗：Dialog/Alert、Actionbar、Popover/Popup
+
+常见的非模态弹窗：Toast/Hud、Tips、Snackbar
+
+### 弹窗
+- 模态
+  - 对话框
+    - Dialog（Android）
+    - Alert（iOS）
+  - 操作栏
+    - Action Views（操作视图）
+    - Action Sheets（操作列表）
+  - 浮层
+    - Popover（iOs）
+    - Popup（Android）
+- 非模态
+  - 轻提示
+    - Toast（Android）
+    - Hud（iOS）
+  - Snackbar中度提示
+  - Tips提示条
+
+
+## 模态弹窗
+
+1. Dialog/Alert  对话框
+
+对话框是我们常用的弹窗，安卓开发语言是Dialog，iOS开发语言Alert，它通常出现在页面的中间，对话框/警示框的类别非常多，对用户的干扰比较大。前面之所以说模态弹窗是一种重提示，是因为它需要用户主动触发选择才可以继续当前的操作。
+
+**① 信息-选择确定**
+
+特点：这类弹窗通常是一些系统功能的授权、版本更新、消息通知、重要提示等，通常只有1～3个主按钮，只需要用户进行简单的选择。
+
+下图举例分析：
+
+iOS询问是否删除APP，就属于重要提示弹窗，它一般会用在像删除、确认提交…一些比较重要的功能操作中。
+
+小红书的这个是否允许使用网络弹窗，大家一定在许多APP中都见过，这属于一个系统自带的授权弹窗。
+
+马蜂窝与天猫的消息提醒弹窗，一个属于初次使用APP时，系统自带的弹窗，一个属于使用后期APP为了推送消息，主动提示你开启消息通知。
+
+有钱花和爱奇艺的版本升级弹窗，都属于偏运营类的弹窗，这一类的弹窗通常会弱化暂不升级的按钮，突出升级主按钮。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyFgOm52r6ADE2gEfzG43cBibwS7f6yGSOdxzgqOXYhlicuqvXtMR1AKwA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyhnxrjhtZMz4tlNaJa0WbcgTB7CibYMpE3xm9IPXza6K9PGO8ssBCHnw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyuEYd9m3UMib7fP7OiafPFkwj6gHIDM8fhT7LZ7yVZ2yayG3gTc7rJ4gg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**② 信息-输入勾选**
+
+特点：这类弹窗通常是输入一些比较少的信息或者勾选信息，常用于备注输入、规格选择、分组选择等，通常只有确定和取消两个按钮。
+
+下图举例分析：
+
+微博对于已关注人的分组及备注，都属于信息输入及勾选类弹窗，操作通常都比较简单。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyYUhOp10uryZUDq6ic7c5fQSXmOQSaIRriavFfia20FJUbql6W4pnhJAUA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**③ 信息-传达展示**
+
+特点：这类弹窗通常是一些广告、红包优惠、节日活动等一些运营类弹窗，主要是吸引用户点击及参加活动，这类运营弹窗通常会设计的比较吸引人，造型各异，会突出领取、查看等大按钮，弱化关闭按钮。
+
+下图举例分析：
+
+拼多多和饿了么这类的红包优惠弹窗，就不多说了，大家都懂，它们最主要的目的就是吸引用户点击，提升购买率。
+
+美团的变黄送好礼弹窗，属于一次比较大的品牌升级，它主要目的是让用户更好的了解并接受品牌色升级。整体的元素及动效设计都非常清晰，视觉感很强。
+
+支付宝的这个猜世界杯赢蚂蚁积分的弹窗，属于活动弹窗，它的整体设计非常贴合主题。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyYuTouuJJHcRddXWguxbYVA6K26eSm5mUNm0TVR8ibdCUOyuIahQcG4w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyJMO1dyibZhx0T4dgk8HShnkPQmj8SN2gPRjMzmV93h119iav0TzoCAyA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+1. Actionbar操作栏
+
+Actionbar主要分为Action Views和Action Sheets。它们通常是由底部弹出，它的操作及信息会比对话框类型的弹窗更多更复杂。这种当前页面的下拉弹窗好处就是，可以让用户清楚的感知当前的操作，比跳转到新页面更加有安全感。还有一个特殊的抽屉式弹窗也顺便说一下。
+
+**① Action Views操作视图**
+
+特点：这类视图弹窗通常占屏比较多，以文字、图标等形式展示各种功能，也可以说这类的弹窗是一个小型的页面。它一般从底部弹出，不太强调归属，大多出现在购买、支付、分享等场景。
+
+下图举例分析：
+
+百度云盘的这个 号扩展弹窗比较特殊，它也可以说是浮层，占满整个屏幕，它最吸引人的还是它的小动效。
+
+京东购买时的弹窗和支付宝付款时的弹窗，都是比较典型的，在各种电商产品及付款页面用的非常多。
+
+转转这个的键盘与输入为一体的弹窗，设计的非常人性化，让用户一次就可以输入多个价格。大大提高了用户的操作效率。
+
+网易云音乐的分享弹窗就是典型的以文字与图标来展示功能的。
+
+微信读书的底部阅读设置弹窗，比较特殊，为了使用户沉浸阅读，它是比较隐藏的，而且非常轻量化。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoy5j85zg08oK9wpZlksvAPMHGNFmiaF6QOm6piaaX3wt4XbeWiaIia22BkFA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyo2iavq0DjB82wgo2H3aZ8icZp1cYru6pCa9WOe9icDic5BTKbOEnKaUlhA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyjxlyQDjhHpReBUCCImLZVnlwhAaBxL4Sia6KSVHbYbeiafsX2m60x1VQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**② Action Sheets 操作列表**
+
+特点：操作列表相对于操作视图，它更单一。主要是以文字展示功能按钮，重要敏感的功能操作一般会用主题颜色或红色显示，主要运用在一些日常控件、功能选择、删除、保存等场景。
+
+下图举例分析：
+
+Keep的选择日期，属于iOS原生控件，非常常见。
+
+淘宝的选择地址弹窗，整个展示的非常清晰全面，而且用户每选择一项，就会有相应的显示。
+
+支付宝和天猫超市的两种列表弹窗，就不多说了，简单的功能选择都会采用这种。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyQ6vxaM0iag4dqanKzribky63SBMZdKT2YkPwREZCQqAFh0qrsfFJBVHA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyFYmCT2JKicTOsFnMsiaLHAnpnBC52obasSo5mC1DoUeiaZSleWjUiaAjBQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**③ 抽屉式弹窗**
+
+特点：这种抽屉式弹窗一般从左右两边弹出，经常运用在一些导航扩展和目录展示中，它能承载比较多的信息，基本上都是用来放一些不太常用的功能。
+
+下图举例分析：
+
+微信读书及一些其他阅读类产品，由于目录很长，而且一般是从上到下浏览的，所以基本都采用了这种抽屉式弹窗。
+
+小红书的这个抽屉式弹窗，以图标和文字的形式展示了一些不是很常用的功能，为我的页面节约了不少空间。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyFamNn9wtqt0e0jcyTwaiaLiaH13byNbZ5GsJaKPhgrQj3KOhiaPunYAMg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+3. Popover/Popup 浮层
+
+Popover是ios的开发语言，popup是安卓的开发语言，浮层是指，用户点击某个功能后浮出一个临时气泡对其作出补充，它通常会伴随着半透明的遮罩或者投影衬底，用户需要点击功能区域操作，或者点击空白处取消，才能进入下一步操作。它与上面操作栏的最大区别就在于，它更强调归属，可以出现在页面的任何地方，而操作栏一般只出现在底部，不强调归属。
+
+**① 指向浮层**
+
+特点：这类的浮层一般伴随有小三角指向，强调归属。气泡里面的功能通常以单一的文字或文字与图标结合的形式来展示，主要运用在顶部加号补充、复制、分享转发等场景。
+
+下图举例分析：
+
+支付宝和美团的顶部加号补充浮层，展示形式是差不多的，只是UI样式不一样，一个是白色气泡黑色半透明遮罩，一个是深灰色气泡。
+
+微信读书和微信的选择文字气泡，在文字复制中很常见，通常会与其他转发收藏小功能一起出现。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyyIswJMZfull9LmN69YGwwzmyCySxf79Q3VuR36ibGDia07OnxwJeYBNQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyNSwbBawV16ENias2Xm3B27aribY1K58ZeBEuO94zaHMGnyHsIQ3uCVYQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**② 导航筛选浮层**
+
+特点：所谓导航筛选，自然是与导航分不开的，再加上浮层是比较强调归属的，所以它通常会与导航连在一起，一般出现在顶部。
+
+下图举例分析：
+
+美团的导航筛选，因为选项及开关很多，所以它的底部会有两个主按钮，一个完成，一个重置。
+
+饿了么的这个只有一个功能选项，所以它一般是直接选择就收起浮层了。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyJpsCsL2171XF8D9ISBVrPKCGeBWbPO2yia0PiculwakIaq4Mql6ppo0g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**③ 引导浮层**
+
+特点：引导浮层的作用就是引导用户更好的使用产品及交互，降低用户的学习成本。它通常会出现在用户首次进入APP的时候，一般只会出现一次，点击空白位置或我知道了浮层就会消失。
+
+下图举例分析：
+
+iQQ音乐与微医的引导浮层都是用户首次进入应用时，给出的功能搬家提醒浮层。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyD5AUW629EqSSkEibKG46BSRk1Iaw7hV4gR97rUDXtwiabd4q4VxXzbIQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+# 非模态弹窗
+
+1. Toast/Hud 提示框
+
+Hud是ios的控件名词，Toast是安卓的控件名词，它们都属于一种轻提示，给予用户及时反馈，让用户知道自己当前所处的状态。
+
+Hud一般只出现在屏幕的中央，以毛玻璃的样式表现，内容展示比较富丰富。
+
+Toast可以出现在屏幕任意位置，通常以黑色半透明的小框来表现，内容一般是纯文字提示或者文字与图标结合提示。
+
+**① 状态提示**
+
+特点：状态提示的Toast，它们一般都是反馈用户当前操作的状态，只出现1到2秒就会自动消失，场景一般是关注成功、密码错误、音量提示、静音、清除缓存等。
+
+下图举例分析：
+
+移动的属于操作遇阻提示。
+
+京东的属于操作成功反馈。
+
+iOS的音量控制属于毛玻璃Hud。
+
+微信的清除缓存属于正在操作状态。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyWfibZ5CwheaMmXFocqDN3G1hz0VpPAh2Rl4e6jTM8f3topINvNY3REg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyMtz4ch9OWn5THia5ptP5alNjr4Lb028023zL1flZiaT5m8RjialoMlicgg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+**② 按键提示**
+
+特点：按键Toast提示与状态提示不同，它们一般自动出现或者点击触发才会出现，用于对功能点的补充说明，让用户对功能有更深的了解。
+
+下图举例分析：
+
+蚂蚁森林里点击树木就会出现相关信息，当然它也会自动出现，点击其他区域也会自动消失。
+
+知乎的消息标签不仅有小红点提示，还会在上方自动出现数字提示。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoy6wVVpUGLCSeoKWdrDhea7tbQILIvaROS3JYpsibZpswcJicxZOFdRqHQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+2. Snackbar
+
+Snackbar是Android中的一个控件。它一般会在超时自动关闭或者在屏幕上滑动关闭，它没有Toast那么轻量，设置出现的时间会比Toast长，而且可以点击按钮进行交互。
+
+下图举例分析：
+
+UC浏览器的Snackbar，是在提示用户上滑，来查看更多内容，它需要滑动或者超时才能关闭。
+
+京东的Snackbar，是在为用户推荐商品，提示用户点击箭头来查看喜欢的商品，它比UC浏览器多了一个关闭的按钮。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyaiauFxORh0dibkDRiaFmiarI1sSl5L6ic6RD5PKibpj2b7wwmy4HKMgTeaww/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+3. Tips提示
+
+Tips与Snackbar最主要的区别就是：Tips它是内嵌在页面上的，而Snackbar则是浮在页面上的。Tips一般要让用户主动触发关闭按钮或点击进入下级页面才会消失，一般用于需要用户感知到的通知信息，或者植入广告。
+
+下图举例分析：
+
+百度云盘在下载视频时，就会出现一个Tips的提示，让用户观看广告来得到加速下载。这种提示虽说是广告，但它抓住了用户的场景及心理，观看广告的几率大大提升。
+
+爱奇艺的Tips提示就属于重要通知提示了，提示用户VIP即将到期，续费可优惠，它们都有一个主按钮及关闭按钮，需要用户主动触发提示才会消失。
+
+<img style="width:45%;margin:0 auto;" src="https://mmbiz.qpic.cn/mmbiz_jpg/EW38SrMibZ3IDkiaBSS83Yh975FTS2hzoyoHxasaapOgHIibibkVYWuqibDmMclibvOs6VjUth2SQ2JXF9KDKZj7icw9w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" align="center"/>
+
+## 规范总结
+
+目前的弹窗样式非常多，你能想到的，你想不到的基本都可以技术实现。但这同时也带来一个问题，那就是“不规范”。以上提到的弹窗种类，你只需要选择符合你产品要求的几个类型，最好不要在一个产品中运用多个同种类型的弹窗，否则后期会很难规范及组件化，当然运营广告类弹窗可以另当别论。
+
+差不多就写完了…大家觉得有帮助的话，记得点在看和转发～
