@@ -24,7 +24,16 @@ window对象对应着浏览器窗口本身，这个对象的属性和方法通�
 
 - ### 获取和设置属性
   - getAttribute:**object**.getAttribute(attribute)
-  - setAttribute:**object**.setAttribute(attribute,value)
+  - setAttribute:**object**.setAttribute(attribute,value)；是“第1级DOM”（DOM Level 1）的组成部分；可以设置任意元素节点的任意属性，也可以直接通过元素属性进行设置。
 
+> **DOM Level 1 Core**
+> 
+> &nbsp;&nbsp;&nbsp;&nbsp;The W3C's DOM Level 1 Core is a powerful object model for changing the content tree of documents. It is supported in all major browsers including Mozilla Firefox and Microsoft Internet Explorer. It is a powerful base for scripting on the web.
+> 
+> &nbsp;&nbsp;&nbsp;&nbsp;W3C的DOM Level 1 核心是修改文档内容树的一个强大的对象模型。它被所有主要的浏览器支持，包括Firefox、IE。它是web脚本的强大的基础。
+> 
+> &nbsp;&nbsp;&nbsp;&nbsp;The W3C DOM Level 1 allows you to change the content tree any way you want. It is powerful enough to build any HTML document from scratch. It allows authors to change anything in the document from script, at any time. The easiest way for web page authors to change the DOM dynamically is using JavaScript. In JavaScript, the document is accessible the same way it has been in older browsers: from the document property of the global object. This document object implements the Document interface from the W3C's DOM Level 1 spec.
+> 
+> &nbsp;&nbsp;&nbsp;&nbsp;W3C的DOM Level 1允许你以任何方式修改内容树。它足够强大来从头开始创建HTML文档。它允许作者使用脚本来修改文档中的任意内容。对于网页开发人员来说，最简单的动态修改DOM的方式是JavaScript。在旧版的浏览器中，都可以使用JavaScript访问全局的document对象的属性来得到文档。这个文档对象实现了W3C的DOM Level 1定义的文档接口。
 
 DOM还提供里许多其他的属性和方法：如nodeName、nodeValue、childNodes、nextSibling、parentNode
