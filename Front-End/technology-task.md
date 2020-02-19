@@ -52,6 +52,7 @@
       - ssr
       - next.js
     - ~~AngularJS~~
+    - Flutter
   - ### 前端UI框架
     - Bootstrap
     - Element UI
@@ -220,8 +221,8 @@
   - ### i18n
   - ### 重学前端
   ![前端工程师技能类型](https://static001.geekbang.org/resource/image/e0/92/e0c654fa7cf5f63cdcca1b6c51008992.jpeg)
-  - 数据结构与算法
-  - 
+  - ### 数据结构与算法
+  - ### Jekyll
 - ## 二十八、实践
 
 
