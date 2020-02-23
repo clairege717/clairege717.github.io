@@ -201,4 +201,41 @@ StatefulWidget类本身是不可变的，但是State类在组件的生命周期�
 
 ## 第四步：创建一个可无限滚动的ListView
 
+在这一步，通过修改**RandomWordsState**创建并显示词对列表。**ListView**组件中显示的列表随着用户滑动而无限增长。**ListView**的**build**构造函数可以按需惰性加载列表视图。
+
+- 在*RandomWordsState*类中添加存储推荐词对的列表值*_suggestions*，添加变量*_biggerFont*来设置更大的字体。
+  ```
+  class RandomWordsState extends State<RandomWords> {
+    final _suggestions = <WordPair>[];
+    final _biggerFont = const TextStyle(fontSize: 18.0);
+    // ···
+  }
+  ```
+
+  > Tips:
+  > Dart中，变量加下划线（_）标识符做前缀，表示强制为私有字段。
+
+- 在*RandomWordsState*类中添加*_buildSuggestions()*函数，这个函数是在*ListView*中显示建议的词对。
+
+  *ListView*提供**itemBuilder**这个builder属性。
+
+  ```
+  Widget _buildSuggestions() {
+    return ListView.builder(
+        padding: const EdgeInsets.all(16.0),
+        itemBuilder: /*1*/ (context, i) {
+          if (i.isOdd) return Divider(); /*2*/
+
+          final index = i ~/ 2; /*3*/
+          if (index >= _suggestions.length) {
+            _suggestions.addAll(generateWordPairs().take(10)); /*4*/
+          }
+          return _buildRow(_suggestions[index]);
+        });
+  }
+  ```
+
+  1. *itemBuilder*回调
+  
+- 
 
