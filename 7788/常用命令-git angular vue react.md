@@ -113,6 +113,14 @@
 
     */.DS_Store
 
+    ### git 清除缓存（若已经在git记录中的文件添加到ignore，需使用）
+
+    git rm -r --cached .
+    
+    git add .
+    
+    git commit -m 'update .gitignore'
+
     **如果是项目做到一半才开始加入.gitignore,则需要在commit所有已经修改文件后，执行以下命令保证.gitignore开始生效。**
 
     git rm -r --cached .
