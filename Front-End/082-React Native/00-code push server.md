@@ -116,7 +116,7 @@
     ```
     ./bin/www
     ```
-
+    打开127.0.0.1:3000 验证服务是否启动成功
 
 ### 客户端
 
@@ -145,34 +145,81 @@
     //登录指令
     code-push login http://localhost:3000
     ```
-    
+    默认帐号admin密码123456
+
 - 添加应用，获取Deployment Key
 
   ```
   //添加应用
   //code-push app add <appName> <os> <platform>
   //示例
-  code-push app add react_native_demo ios react-native
+  code-push app add react_native_demo_ios ios react-native
   ```
 
-┌────────────┬───────────────────────────────────────┐
-│ Name       │ Deployment Key                        │
-├────────────┼───────────────────────────────────────┤
-│ Production │ PFXevrcFnsyvrRFbSNDRbw28KkMW4ksvOXqog │
-├────────────┼───────────────────────────────────────┤
-│ Staging    │ xvy0BEzZJMoIiIsN3POZ3NUoYRfw4ksvOXqog │
-└────────────┴───────────────────────────────────────┘
+  | Name       | Deployment Key                        |
+  |:----------:| :------------------------------------:|
+  | Production | PFXevrcFnsyvrRFbSNDRbw28KkMW4ksvOXqog |
+  | Staging    | xvy0BEzZJMoIiIsN3POZ3NUoYRfw4ksvOXqog |
 
-┌────────────┬───────────────────────────────────────┐
-│ Name       │ Deployment Key                        │
-├────────────┼───────────────────────────────────────┤
-│ Production │ o6pBwOINIDsPeswKtFb3JjduRPTg4ksvOXqog │
-├────────────┼───────────────────────────────────────┤
-│ Staging    │ 7x3yIgHKdUalWGkfGCkHCkv4GdDE4ksvOXqog │
-└────────────┴───────────────────────────────────────┘
+
+
+  ```
+  // 查看项目信息
+  code-push deployment ls react_native_demo_ios -k
+  ```
+
 
 ### React Native
 
+当前使用的rn版本：0.61.2
+
 - 安装react-native-code-push
+  `yarn add react-native-code-push`
+
+- 检查更新
+  ```
+  componentDidMount() {
+    CodePush.sync({
+        //启动模式三种：ON_NEXT_RESUME、ON_NEXT_RESTART、IMMEDIATE
+        installMode: CodePush.InstallMode.ON_NEXT_RESTART,
+        // 苹果公司和中国区安卓的热更新，是不允许弹窗提示的，所以不能设置为true
+        updateDialog: false  
+    });
+  }
+  ```
+ 
+  
 - Android配置
+  1. RN 60以上版本，可以直接将react-native-code-push添加到项目依赖中，无需重复操作。
+  2. 注意项目到版本号，默认是1.0，codepush需要三位数。
+  3. 
+
+  
 - iOS配置
+
+
+### 发布更新
+
+- 生成bundle
+  
+  发布更新前，将js打包成bundle
+  
+  1. 在项目中新增bundles文件夹
+  2. 运行打包bundle的命令
+   
+   `react-native bundle --platform 平台 --entry-file 启动文件 --bundle-output 打包js输出文件 --assets-dest 资源输出目录 --dev 是否调试`
+
+   `react-native bundle --platform android --entry-file index.android.js --bundle-output ./bundles/index.android.bundle --dev false`
+
+   默认输出文件名为："main.jsbundle" (iOS), "index.android.bundle" (Android) or "index.windows.bundle" (Windows)
+
+- 发布更新
+  
+  bundle打包结束后，使用code-push进行发布更新
+
+  `code-push release <应用名称> <Bundles所在目录> <对应的应用版本> --deploymentName： 更新环境 --description： 更新描述 --mandatory： 是否强制更新`
+
+  `code-push release GitHubPopular ./bundles/index.android.bundle 1.0.6 --deploymentName Production --description "1.支持文章缓存。" --mandatory true`]
+
+
+  
