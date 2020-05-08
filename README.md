@@ -22,6 +22,6 @@
 
 - TODO
   
-  - [ ] jekyll-0910
-  - [ ] netlify-0910
+  - [ ] jekyll
+  - [ ] netlify
 
