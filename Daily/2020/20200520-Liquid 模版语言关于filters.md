@@ -6,6 +6,8 @@
 
 [日期格式化指令](https://ruby-doc.org/core-2.7.1/Time.html#method-i-strftime)
 
+[日期格式化](http://www.strfti.me/)
+
 ```
 Date (Year, Month, Day):
   %Y - Year with century if provided, will pad result at least 4 digits.
