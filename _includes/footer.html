@@ -1,0 +1,30 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <ul class="list-inline text-center">
+            {% if site.RSS %}
+            <li class="list-inline-item">
+                <a class="text-secondary" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                    <ion-icon style="font-size: 1.5rem;" name="logo-rss"></ion-icon>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.github_username %}
+            <li class="list-inline-item">
+                <a class="text-secondary" target="_blank" href="https://github.com/{{ site.github_username }}">
+                    <ion-icon style="font-size: 1.5rem;" name="logo-github"></ion-icon>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="{{ "/assets/js/jquery-3.5.1.js " | prepend: site.baseurl }}"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/assets/js/bootstrap.js " | prepend: site.baseurl }}"></script>
+<!-- Ionicons -->
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/assets/js/main.js " | prepend: site.baseurl }}"></script>

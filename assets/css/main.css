@@ -1,0 +1,156 @@
+@import url("bootstrap.css");
+
+.intro-header {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tags-item {
+    padding: 0.5rem;
+}
+
+.sidebar-avatar {
+    width: 200px;
+    border-radius: 1rem;
+    filter: grayscale(30%);
+}
+
+.post-preview>a {
+    text-decoration: none;
+}
+
+.post-preview>a:hover,
+.post-preview>a:focus {
+    text-decoration: none;
+}
+
+.post-preview .post-title {
+    color: var(--gray);
+}
+
+.post-preview .post-subtitle,
+.post-preview .post-content-preview {
+    color: var(--gray-light);
+}
+
+.post-preview>a:hover .post-title,
+.post-preview>a:focus .post-title {
+    color: var(--gray-dark);
+}
+
+.post-preview>a:hover .post-subtitle,
+.post-preview>a:focus .post-subtitle,
+.post-preview>a:hover .post-content-preview,
+.post-preview>a:focus .post-content-preview {
+    color: var(--gray);
+}
+
+.post-preview .post-meta {
+    color: var(--gray-dark);
+}
+
+.timeline {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.timeline .timeline-title {
+    color: var(--gray-dark);
+    font-size: 1.25rem;
+
+}
+
+.timeline-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.timeline-list li {
+    padding-left: 4.5rem;
+}
+
+.timeline-list>.year-item {
+    position: relative;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.timeline-list>.year-item>.year {
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    border-right: 1px solid var(--gray);
+    width: 4.5rem;
+    color: var(--gray-dark);
+}
+
+.timeline-list>.date-item>.date-container {
+    border-left: 1px solid var(--gray);
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.75rem;
+}
+
+.timeline-list>.date-item>.date-container>time {
+    color: var(--gray-dark);
+}
+
+.timeline-list>.year-item>.year::after,
+.timeline-list>.date-item>.date-container::before {
+    content: "-";
+    font-size: 1rem;
+    position: absolute;
+    letter-spacing: 0;
+}
+
+.timeline-list>.year-item>.year::after {
+    right: 0;
+}
+
+.timeline-list>.date-item>.date-container::before {
+    left: 0;
+}
+
+
+.pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+  }
+  .pager li {
+    display: inline;
+  }
+  .pager li > a,
+  .pager li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  .pager li > a:hover,
+  .pager li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+  }
+  .pager .next > a,
+  .pager .next > span {
+    float: right;
+  }
+  .pager .previous > a,
+  .pager .previous > span {
+    float: left;
+  }
+  .pager .disabled > a,
+  .pager .disabled > a:hover,
+  .pager .disabled > a:focus,
+  .pager .disabled > span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+  }

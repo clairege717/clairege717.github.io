@@ -1,0 +1,19 @@
+<!-- Page Header -->
+<header class="intro-header">
+    <!-- Featured Tags -->
+    {% if site.featured-tags %}
+    <section>
+        <ul class="list-inline">
+            {% for tag in site.tags %}
+            {% if tag[1].size > {{site.featured-condition-size}} %}
+            <li class="tags-item list-inline-item border rounded-pill">
+                <a class="text-secondary text-decoration-none" href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                    {{ tag[0] }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+</header>

@@ -1,3 +1,11 @@
+# jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# blog
 .DS_Store
 Angular/
 React/

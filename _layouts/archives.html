@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<!-- 归档相关模版 -->
+
+<section class="container timeline">
+  <p class="timeline-title">一共输出 {{ site.posts.size }} 篇文章</p>
+  <ul class="timeline-list">
+    {% for post in site.posts %}
+    {% if post.next != null %}
+    {% capture postYear %} {{ post.date | date: "%Y" }} {% endcapture %}
+    {% capture nextPostYear %} {{ post.next.date | date: "%Y" }} {% endcapture %}
+    {% if postYear != nextPostYear %}
+    <li class="year-item">
+      <p class="year" id="year{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</p>
+    </li>
+    {% endif %}
+    {% else %}
+    <li class="year-item">
+      <p class="year" id="year{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</p>
+    </li>
+    {% endif %}
+
+    <li class="date-item">
+      <div class="date-container">
+        <time>{{ post.date | date:"%m-%d" }}</time>
+        <a class="text-secondary text-decoration-none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
+    </li>
+
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,23 @@
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light navbar-expand-md sticky-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" target="_self" href="{{ site.baseurl }}/">首页</a>
+            </li>
+            {% for page in site.pages %}{% if page.title %}
+            <li class="nav-item">
+                <a class="nav-link" target="_self" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+            {% endif %}{% endfor %}
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
