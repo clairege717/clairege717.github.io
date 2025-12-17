@@ -1,27 +1,60 @@
 # clairege717
 
-葛燕丹的个人博客（知识点记录、练习）
---------------------------------
+葛燕丹的个人博客（知识点记录、练习），基于 Jekyll 4 搭建。
 
-个人博客内容
+## 项目包含内容
 
-- 7788
-  
-  杂七杂八的信息记录
+- 文章与笔记
+  - `Daily/`：日常记录、工作/生活小记
+  - `Front-End/`：前端技术栈学习笔记
+  - `7788/`：杂七杂八的信息记录
+  - `_posts/`：按时间发布的文章（Jekyll 默认文章目录）
+- 页面与布局
+  - `_layouts/`：页面布局（home/page/about/archives 等）
+  - `_includes/`：可复用片段（head/nav/footer 等）
+  - `about.md`、`archive.md`、`404.html`：站点页面
+- 静态资源
+  - `assets/`：Bootstrap/jQuery/Ionicons 及自定义 CSS/JS、图片等
+- 构建与依赖
+  - `Gemfile` / `Gemfile.lock`：Ruby 依赖（已包含 `webrick` 以兼容 Ruby 3）
+  - `_config.yml`：Jekyll 配置（站点信息、分页、插件等）
+  - `blogpull.sh`：拉取更新并重启本地服务的脚本（如有使用场景）
 
-- Daily
-  
-  日常，日记，小记。
+## 本地运行
 
-  日常冲浪所见所闻，日常工作各种bug，好记性不如烂笔记。
+### 环境要求
 
-- FrontEnd
-  
-  前端工程师技术栈，自我丰富中。
+- Ruby（建议 3.x）
+- Bundler（如未安装：`gem install bundler`）
 
+### 安装依赖
 
-- TODO
-  
-  - [ ] jekyll
-  - [ ] netlify
+```bash
+bundle install
+```
 
+### 启动开发服务
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+默认访问：<http://127.0.0.1:4000>
+
+> 如果提示缺少 `webrick`，请重新执行 `bundle install`，并确认 `Gemfile` 中已包含 `webrick` 依赖。
+
+### 构建静态文件
+
+```bash
+bundle exec jekyll build
+```
+
+输出目录：`_site/`
+
+## TODO
+
+- [ ] 整理目录命名与分类（如 `Front-End`、`Daily` 的归档规则）
+- [ ] 增加站内搜索/标签页
+- [ ] 增加评论系统（例如 Giscus/Disqus）
+- [ ] 优化页面性能与资源体积（图片压缩、按需加载）
+- [ ] 部署到 Netlify / GitHub Pages，并补充部署文档
