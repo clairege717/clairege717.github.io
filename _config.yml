@@ -35,6 +35,9 @@ RSS: true
 # Build settings
 plugins: [jekyll-feed, jekyll-archives, jekyll-paginate]
 
+# Theme settings
+theme: minima
+
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "好记性不如烂笔记。"
