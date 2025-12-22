@@ -1,14 +1,9 @@
-# jekyll
-_site
-.sass-cache
-.jekyll-cache
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
-
-# blog
-.DS_Store
-Angular/
-React/
-Vue/
-Blog/Front-End/test
-maogousheng/
+Gemfile.lock
+node_modules/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
