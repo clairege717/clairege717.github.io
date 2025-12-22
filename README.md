@@ -57,4 +57,17 @@ bundle exec jekyll build
 - [ ] 增加站内搜索/标签页
 - [ ] 增加评论系统（例如 Giscus/Disqus）
 - [ ] 优化页面性能与资源体积（图片压缩、按需加载）
-- [ ] 部署到 Netlify / GitHub Pages，并补充部署文档
+- [x] 部署到 Netlify / GitHub Pages，并补充部署文档
+
+## 部署 (Deployment)
+
+本项目使用 GitHub Actions 自动构建并部署到 GitHub Pages。
+
+- **触发条件**：推送到 `master` 分支。
+- **构建流程**：
+  1. 拉取代码
+  2. 安装 Ruby 依赖
+  3. 执行 `jekyll build` 生成静态文件
+  4. 将 `_site` 目录部署到 `gh-pages` 分支
+
+**注意**：请在 GitHub 仓库设置中（Settings -> Pages），将 **Source** 设置为 `Deploy from a branch`，并选择 `gh-pages` 分支。

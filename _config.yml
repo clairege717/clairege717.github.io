@@ -33,7 +33,7 @@ keyword: "前端 技术栈"
 RSS: true
 
 # Build settings
-gems: [jekyll-feed, jekyll-archives, jekyll-paginate]
+plugins: [jekyll-feed, jekyll-archives, jekyll-paginate]
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
