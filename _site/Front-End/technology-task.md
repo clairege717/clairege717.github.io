@@ -1,0 +1,230 @@
+# Web前端开发技术栈
+
+部分整理引用自[web前端技术体系大全(sf)](https://segmentfault.com/a/1190000018505284?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly#articleHeader9)
+,[WebFrontEndStack(github)](https://github.com/unruledboy/WebFrontEndStack)
+
+前端发展展望：可视化；工程化
+
+- ## 一、Web基础
+  - ### HTML
+    - DOM
+    - Element
+    - Attribute
+  - ### CSS
+    - Selector
+    - Priority
+    - Specificity
+    - Box Model
+  - ### JavaScript
+    - Prototype
+    - Scope
+    - Closure
+    - JSON
+    - AJAX
+- ## 二、CSS预处理
+  - ### LESS
+  - ### SCSS
+  - ### Stylus
+- ## 三、标准
+  - ### W3C
+- ## 四、库/框架
+  - ### 基础库
+    - jQuery
+    - Prototype
+    - ~~Zepto~~
+    - ~~MooTool~~
+  - ### 前端技术框架
+    - Angular
+      - ionic
+    - Vue.js
+      - vue-resource
+      - vue-form
+      - vue-quil-editor(富文本编辑器)
+      - vuex
+      - vue-router
+      - axios
+      - plupload(文件上传)
+    - React
+      - react-cli
+      - redux
+      - react-router
+      - dva
+      - ssr
+      - next.js
+    - ~~AngularJS~~
+    - Flutter
+  - ### 前端UI框架
+    - Bootstrap
+    - Element UI
+      - el-row,el-col
+      - el-slider
+      - el-table
+      - el-dropdown
+      - el-dialog
+      - el-pagenation
+      - el-form
+    - [Vuetify(Material Design Component Framework)](https://vuetifyjs.com/zh-Hans/)
+    - Mint UI(移动端)
+    - jQuery Mobile(移动端)
+    - LayerUI
+    - Material UI
+    - Amaze UI
+    - Ant Design
+    - ~~Foundation~~
+  - ### 服务端渲染框架
+    - Next.js(React)
+    - [Nuxt.js(Vue.js)](https://zh.nuxtjs.org/)
+- ## 五、中间语言
+  - ### TypeScript
+  - ### ~~CoffeeScript~~
+- ## 六、代码构建工具
+  - ### WebPack
+  - ### Babel
+  - ### ~~Grunt~~
+  - ### ~~Gulp~~
+- ## 七、包管理工具
+  - ### npm
+  - ### cnpm
+  - ### ~~Bower~~
+  - ### ~~yarn~~
+- ## 八、桌面应用开发
+  - ### Electron
+  - ### ~~NW.js~~
+- ## 九、移动应用开发
+  - ### Ionic
+  
+  - ### MUI
+  
+  - ### React Native
+- ## 十、数据可视化（图表、地图）
+  - ### [Echarts](https://echarts.baidu.com/)
+  - ### [Highcharts](https://www.highcharts.com.cn/)
+  - ### [Antv](http://antv.alipay.com/zh-cn/...)
+  - ### [D3.js](https://d3js.org/)
+  - ### [彩云天气](https://open.caiyunapp.com)
+  - ### [Google Map](https://developers.google.cn/maps/)
+  - ### [高德地图](https://lbs.amap.com/)
+  - ### [百度地图](https://lbsyun.baidu.com/)
+  - ### [腾讯地图](https://lbs.qq.com/)
+  - ### ~~[天地图](http://lbs.tianditu.gov.cn/)~~
+  - ### ~~[inMap](http://inmap.talkingdata.com/)~~
+  - ### ~~[leaflet](https://leafletjs.com/reference-1.3.2.html)~~
+  - ### ~~[Cesium](https://cesiumjs.org/index.html)~~
+  - ### ~~[Mapbox](https://www.mapbox.com/)~~
+  - ### ~~[Openlayers](http://www.openlayers.cn/portal.php)~~
+  - ### ~~[GeoServer](http://blog.geoserver.org/)~~
+- ## 十一、WebGL
+  - ### Three.js
+  - ### ~~Pixi.js~~
+  - ### ~~Babylon.js~~
+- ## 十二、CSS3动画
+  - ### Animate.css
+  - ### ~~bounce.js~~
+  - ### ~~Effeckt.css~~
+  - ### move.js
+- ## 十三、数据交互
+  - ### AJAX
+  - ### Axios
+  - ### Mock
+- ## 十四、最佳实践
+  - ### SEO
+  - ### CDN
+- ## 十五、安全
+  - ### CORS
+  - ### XSS
+- ## 十六、协议
+  - ### WebSocket
+    - Socket.io
+    - web-socket-js
+  - ### ~~HTTP/1.1~~
+  - ### ~~HTTP/2~~
+- ## 十七、浏览器
+  - ### Internet Explorer
+  - ### Chrome
+  - ### Firefox
+  - ### Safari
+  - ### Opera
+  - ### Edge
+- ## 十八、渲染引擎
+  - ### Trident(IE)
+  - ### Blink/prev. WebKit(Chrome)
+  - ### Gecko(Firefox)
+  - ### WebKit(Safari)
+  - ### Blink/prev. Presto(Opera)
+  - ### EdgeHTML(Edge)
+- ## 十九、脚本引擎
+  - ### V8(Chrome/Opera/Nodejs/MongoDB)
+    - Node.js
+      - 模块化
+      - 流
+      - Buffer
+      - 异步
+      - 进程与线程
+      - IO
+      - 网络
+    - MySQL
+    - MangoDB
+    - Redis
+  - ### JScript(IE8-/ASP)
+  - ### Chakra(IE9+/Edge)
+  - ### SpiderMonkey(Firefox)
+  - ### JavaScriptCore(Safari)
+- ## 二十、运行时
+  - ### Cookie
+  - ### Local Cache
+  - ### Session Storage
+  - ### Local Storage
+  - ### Components
+    - Extensions
+    - Plugins
+  - ### Resources
+    - Images
+    - Icons
+    - Fonts
+    - Audios
+    - Videos
+- ## 二十一、质量控制
+  - ### JSLint
+  - ### Closure
+  - ### ~~JSHint~~
+  - ### ~~jscs~~
+- ## ~~二十二、测试~~
+  - ### ~~Seleniun~~
+  - ### ~~WebDriverIO~~
+- ## ~~二十三、编译任务~~
+  - ### ~~精简~~
+  - ### ~~编译~~
+  - ### ~~合并~~
+  - ### ~~混淆~~
+  - ### ~~图像优化~~
+  - ### ~~单元测试~~
+- ## 二十四、技术社区
+  - ### 博客园
+  - ### CSDN
+  - ### 思否
+- ## 二十五、团队办公
+  - ### 界面设计：[蓝湖](https://lanhuapp.com/)
+  - ### 接口文档：[RAP](http://rapapi.org/org/index.do)
+  - ### 测试管理：[禅道](https://www.zentao.net/)
+  - ### API 的设计、编写 API 文档、测试和部署：[Swagger](https://swagger.io/)
+- ## 二十六、代码托管
+  - ### github
+  - ### gitee码云
+  - ### ~~gitlab~~
+- ## 二十七、七七八八
+  - ### 微信小程序
+    - 开发模式
+    - flex布局
+    - 扫码
+    - 下拉刷新
+    - 轮播图
+    - 图片
+    - 支付API
+  - ### i18n
+  - ### 重学前端
+  ![前端工程师技能类型](https://static001.geekbang.org/resource/image/e0/92/e0c654fa7cf5f63cdcca1b6c51008992.jpeg)
+  - ### 数据结构与算法
+  - ### Jekyll
+- ## 二十八、实践
+
+
