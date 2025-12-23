@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!-- 全局模版 -->
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="好好学习，热爱工作，享受生活。">
+    <meta name="keyword"  content="前端 技术栈">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>燕过留声 Claire的博客</title>
+    <link rel="canonical" href="http://localhost:4000/page3/">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-light bg-light navbar-expand-md sticky-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/">燕过留声</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" target="_self" href="/">首页</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" target="_self" href="/about.html">关于我</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" target="_self" href="/archive.html">归档</a>
+            </li>
+            
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+    <!-- 首页模版内容 -->
+
+<!-- Header -->
+<!-- Page Header -->
+<header class="intro-header">
+    <!-- Featured Tags -->
+    
+    <section>
+        <ul class="list-inline">
+            
+            
+            <li class="tags-item list-inline-item border rounded-pill">
+                <a class="text-secondary text-decoration-none" href="/tags/#daily" title="daily" rel="42">
+                    daily
+                </a>
+            </li>
+            
+            
+        </ul>
+    </section>
+    
+</header>
+
+<!-- Main Content -->
+<div class="container mb-2">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            
+<div class="post-preview">
+    <a href="/daily/2019/12/16/ES6%E7%B1%BB.html">
+        <h2 class="post-title">
+            20191216-ES6 类
+        </h2>
+        
+        <div class="post-content-preview">
+            转：ES6 类(Class)基本用法和静态属性+方法详解
+
+ES6明确规定，Class内部只有静态方法，没有静态属性，所以ES6在类中定义静态属性都是错误的。
+
+ES6实例属性只能在constructor构造函数中定义
+
+
+  
+    constructor-是类的构造函数，是默认方法。
+
+    通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，如果没...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2019-12-16
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2019/12/15/es8%E6%96%B0%E7%89%B9%E6%80%A7.html">
+        <h2 class="post-title">
+            20191215-es8新特性
+        </h2>
+        
+        <div class="post-content-preview">
+            转：ES6、ES7、ES8学习指南
+
+ES8的新特性
+
+  
+    async/await
+
+    避免回调地狱，使代码看起来简洁
+  
+  
+    Object.values()
+
+    Object.values()是一个与Object.keys()类似的新函数，但返回的是Object自身属性的所有值，不包括继承的值。
+  
+  Object.entries()
+  String...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2019-12-15
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2019/12/08/JS%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.html">
+        <h2 class="post-title">
+            2019-12-08 JS函数柯里化
+        </h2>
+        
+        <div class="post-content-preview">
+            转： 详解JS函数柯里化
+
+定义
+
+柯里化，英语：Currying(果然是满满的英译中的既视感)，是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数的技术。
+
+示例：
+// 普通的add函数
+function add(x, y) {
+    return x + y
+}
+
+// Currying后
+function curr...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2019-12-08
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2019/09/17/webpack%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%82%B9.html">
+        <h2 class="post-title">
+            20190917 - webpack的一些小点
+        </h2>
+        
+        <div class="post-content-preview">
+            20190917 - webpack的一些小点
+
+  webpack的配置文件是一个.js文件
+  采用node语法
+  导出一个配置对象
+  采用commonjs2规范进行导出，即：module.exports={}
+  webpack所有资源都通过require的方式引入
+  webpack中，loader是一个函数，主要为了实现源码的转换
+  loader函数会以源码作为参数，比如ES...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2019-09-17
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2019/09/07/CSSMasonryLayout.html">
+        <h2 class="post-title">
+            20190907 - Approaches for a CSS Masonry Layout
+        </h2>
+        
+        <div class="post-content-preview">
+            20190907 - Approaches for a CSS Masonry Layout
+
+  Masonry with Columns
+  Masonry with Flexbox
+  Masonry with Flexbox + JS
+  Rahul Arora’s Left-to-right Masonry Layout using CSS Grid
+  Masonry by or...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2019-09-07
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page2">&larr; 上一页</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page4">下一页 &rarr;</a>
+    </li>
+    
+</ul>
+
+
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <!-- Short About -->
+            <section class="visible-md visible-lg">
+                <h5>
+                    <a class="text-secondary text-decoration-none" href="/about/">关于我</a>
+                </h5>
+                <div class="short-about">
+                    
+                    <img class="sidebar-avatar mb-2" src="/assets/images/avatar.png" />
+                    
+                    
+                    <p class="text-secondary mb-2">好记性不如烂笔记。</p>
+                    
+                    
+                    <p class="text-secondary mb-2">好好学习，热爱工作，享受生活。</p>
+                    
+                    <!-- SNS Link -->
+                    <ul class="list-inline">
+                        
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                            <a target="_blank" href="https://github.com/clairege717">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+</div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <ul class="list-inline text-center">
+            
+            <li class="list-inline-item">
+                <a class="text-secondary" href="/feed.xml">
+                    <ion-icon style="font-size: 1.5rem;" name="logo-rss"></ion-icon>
+                </a>
+            </li>
+            
+            
+            <li class="list-inline-item">
+                <a class="text-secondary" target="_blank" href="https://github.com/clairege717">
+                    <ion-icon style="font-size: 1.5rem;" name="logo-github"></ion-icon>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/assets/js/jquery-3.5.1.js "></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/bootstrap.js "></script>
+<!-- Ionicons -->
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="/assets/js/main.js "></script>
+
+</body>
+
+</html>
