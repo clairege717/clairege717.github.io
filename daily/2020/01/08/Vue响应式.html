@@ -1,0 +1,184 @@
+<h2 id="vue2的数据响应式原理">Vue2的数据响应式原理</h2>
+
+<ul>
+  <li>
+    <p>什么是defineProperty</p>
+
+    <p>defineProperty是定义对象的属性</p>
+
+    <p>defineProperty其实不是核心的为一个对象做数据双向绑定，而是去给对象做属性标签，只不过属性里的get和set实现了响应式</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>属性名</th>
+          <th>默认值</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>value</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>get</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>set</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>writable</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>enumerable</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>configurable</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  obj = {
+      a: '1',
+      b: '2'
+  }
+
+  Object.defineProperty(obj,'b',{
+      writable: false,
+      enumerable: false,
+      configurable: false
+  })
+
+  Object.getOwnPropertyDescriptor(obj,'a')
+
+  Object.freeze(obj);
+  Object.seal(obj);
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Vue 从改变一个数据到发生改变到过程</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>              get 部分收集依赖(收集对应的变量在哪些地方用到)
+              | 数据改变触发set -\&gt; set 部分触发notify -\&gt; 更改对应到虚拟dom -\&gt; 重新render
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>额外注意：数组的监听</p>
+
+    <p>vue数组的特性：push、shift、unshift触发视图更新</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var arrayPro = Array.prototype;
+var arrayob = Object.create(arrayPro);
+var arr = ['push','pop','shift'];
+// **装饰者模式**
+arr.forEach(function(method,index){
+    arrayob[method] = function(){
+        var ret = arrayPro[method].apply(this,arguments);
+        dep.notify();
+        return ret;
+    }
+})
+</code></pre></div>    </div>
+    <h2 id="vue3的数据响应式原理">Vue3的数据响应式原理</h2>
+  </li>
+  <li>
+    <p>Proxy是什么</p>
+
+    <p>Proxy对象用于定义基本操作的自定义行为</p>
+
+    <p>和defineProperty类似，功能几乎一样，用法有不同。</p>
+
+    <ul>
+      <li>区别一：Proxy不会污染源对象</li>
+      <li>区别二：可以省一个for in循环遍历源对象</li>
+      <li>区别三：Proxy get、set等都可以接收参数，指向源对象</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var obj = {a:333,b:444};
+  var obj2 = new Proxy(obj,{
+      get: function(target,key,receiver){
+          return Relect.get(target,key)
+      }
+      set: function(target,key,value,receiver){
+          return Relect.set(target,key,value)
+      }
+  })
+</code></pre></div></div>
+
+<ul>
+  <li>还能利用proxy做什么
+    <ul>
+      <li>校验类型
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// **策略模式**
+var valiob = {
+  name: function(value){
+      return (typeof value === 'number')
+  },
+  age: function(value){
+      return (typeof value === 'number' &amp;&amp; value &gt;= 18)
+  }
+}
+function person(age,name){
+  this.age = age;
+  this.name = name;
+  return new Proxy(this,{
+      get:function(target,key){
+          return Relect.get(target,key);
+      }
+      set: function(target,key,value){
+          if(valiob[key](value)){
+              return Relect.set(target,key,value);
+          } else {
+              throw new Error(key + 'type error');
+          }
+              
+      }
+  })
+}
+</code></pre></div>        </div>
+      </li>
+      <li>真正的私有变量</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="diff算法和virtual-dom">Diff算法和virtual dom</h2>
+
+<p>virtual dom是一个虚拟层，并不真实存在</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;template&gt;
+    &lt;div&gt;
+        &lt;p&gt;1&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+diff &lt;div&gt;
+    props:{a:3}
+    children:[
+        diff &lt;p&gt;
+        props:
+        children:[]
+        diff &lt;p&gt;
+        props:
+        children:[]
+        diff &lt;p&gt;
+        props:
+        children:[]
+    ]
+</code></pre></div></div>
+
+<p>Vue2遍历所有子节点，全部遍历完
+Vue2遍历速度由节点数量决定
+Vue3由动态数量决定</p>
+

@@ -1,0 +1,92 @@
+<ul>
+  <li>JavaScript执行过程-eventloop
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>setTimeout(function(){
+    console.log('set1')// 3
+})
+
+new Promise((resolve)=&gt;{
+    console.log('pr1');// 0
+    resolve();
+}).then(function(){
+    console.log('then1')// 2
+})
+
+setTimeout(function(){
+    console.log('set2')// 4
+})
+
+console.log(3)// 1
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>开始执行</strong>      &lt;- 异步任务的回调回到主任务执行 &lt;-
+|                                             |
+<strong>逐步执行代码</strong>                                |
+|                                             |
+<strong>有代码异步操作</strong>  -&gt; 异步操作插入到队列 -&gt; <strong>异步队列</strong>
+|                                             ^<br />
+<strong>执行完毕</strong>       -&gt; 问询是否有异步    ———-|</p>
+
+<p><strong>微任务与宏任务</strong></p>
+<ul>
+  <li>微任务: Promise, process.nextTick</li>
+  <li>宏任务: 整体代码script, setTimeout, setInterval</li>
+</ul>
+
+<p>会先于宏任务执行，微任务队列空了，才会去执行下一个宏任务</p>
+
+<ul>
+  <li>作用域链与引用类型
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var a = [1, 2, 3];
+function f(a){
+    a[3] = 4 // **变量是数组，是引用类型**
+    a = [100] // **参数在方法内，相当于一个局部变量**
+    console.log(a);// [100]
+}
+f(a);
+console.log(a);// [1,2,3,4]
+</code></pre></div>    </div>
+
+    <p>js 查找变量，会从当前作用域逐级向上，直到window，如果window没有，就是undefined</p>
+
+    <p><strong>JavaScript的数组并不是数据结构意义上的数组，为什么？</strong></p>
+
+    <ol>
+      <li>数据结构意义上的数组，连续相等内存变量。大小、类型</li>
+      <li>真正的数组是不可以扩容的</li>
+    </ol>
+  </li>
+  <li>v8引擎回收机制
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var size = 20*1024*1024;
+var arrAll = [];
+// v8引擎只有1.4g的内存可以支配，node可以使用C++的内存
+// node，写服务，只要服务开着，全局变量一直不会回收
+for(var i=0;i&lt;20;i+=){
+    arrAll.push(new Arrar(size));
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>内存如何回收</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>内存快接近满
+- 全局变量：不回收
+- 局部变量且失去引用：回收
+</code></pre></div></div>
+
+<p><strong>内存查看</strong></p>
+
+<p>v8引擎-只有1.4g的内存可以支配，node可以使用C++的内存</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 浏览器：window.performance
+- Node：process.memoryUsage()
+</code></pre></div></div>
+
+<p><strong>容易引发内存使用不当的情景</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 滥用全局变量
+- 缓存不限制
+- 操作大文件
+</code></pre></div></div>

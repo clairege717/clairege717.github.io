@@ -1,0 +1,173 @@
+<p><a href="https://zhuanlan.zhihu.com/p/101517039?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=27827097305088">20200107-转2019前端回顾</a>
+<strong>转自知乎阿里妈妈前端快爆</strong></p>
+
+<p>不知不觉，二零一九悄然离去。《阿里妈妈前端快爆》从最早的内部第一篇文章算起，已经走过两个多年头了。回顾过去，我们梳理了 2019 年值得了解的技术发展脉络，与诸位细品。</p>
+
+<h2 id="标准进行时">标准进行时</h2>
+
+<p><strong>ECMAScript 2019 如期到来</strong></p>
+
+<p>ECMAScript 2019 年<a href="https://link.zhihu.com/?target=https%3A//2ality.com/2018/02/ecmascript-2019.html">包含这些更新</a>：</p>
+
+<ul>
+  <li>Array.prototype.flat、Array.prototype.flatMap；</li>
+  <li>String.prototype.trimStart、String.prototype.trimEnd；</li>
+  <li>Object.fromEntries；</li>
+  <li>Symbol.prototype.description；</li>
+  <li>try catch 语句允许不填入参数了；</li>
+  <li>Array.prototype.sort 将用 <a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Timsort">Timsort 算法</a> 保证排序结果的稳定性；</li>
+  <li>Function.prototype.toString() 行为修改；</li>
+  <li>修复 JSON 中 Unicode 边界问题的 <a href="https://link.zhihu.com/?target=https%3A//github.com/tc39/proposal-well-formed-stringify">Well Formed JSON</a> 和 <a href="https://link.zhihu.com/?target=https%3A//github.com/tc39/proposal-json-superset">Subsume JSON</a>。</li>
+</ul>
+
+<p>ECMAScript 2020 年可以期待<a href="https://link.zhihu.com/?target=https%3A//2ality.com/2019/12/ecmascript-2020.html">这些更新</a>。</p>
+
+<p><strong>WebAPI 趋于丰富</strong></p>
+
+<ul>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/webauthn/">WebAuthn</a> 进入 W3C 推荐规范，WebAuthn 允许用户通过生物识别、个人移动设备等多种方式来进行身份认证；</li>
+  <li>三个 WebAssembly 标准进入 W3C 推荐阶段： <a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-core-1-20191205/">WebAssembly 核心规范</a>、<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/">WebAssembly Web API</a>、<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/">WebAssembly JavaScript 接口</a>；</li>
+  <li>W3C 发布 <a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/">CSS Animation Worklet API</a> 工作草案，提供了在专用线程中运行动画的 API；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//webmonetization.org/">Web Monetization API</a> （小额支付 API）在过去一年有了声音；</li>
+  <li>画中画提案 <a href="https://link.zhihu.com/?target=https%3A//github.com/w3c/picture-in-picture">Picture-in-Picture API</a> 已经在三个主流浏览器（<a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5729206566649856">Chrome 71</a>、<a href="https://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2019/07/testing-picture-in-picture-for-videos-in-firefox-69/">Firefox 69</a> 和 <a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/9621/release-notes-for-safari-technology-preview-95/">Safari TP 95</a>）中得到实验性支持；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/webxr/">WebXR Device API</a> 在 <a href="https://link.zhihu.com/?target=https%3A//developers.google.com/web/updates/2019/12/nic79">Chrome 79</a> 中进入试验性支持，为智能手机和头戴式显示器创建沉浸式体验；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/resize-observer/%23resize-observer-interface">ResizeObserver API</a> 在 <a href="https://link.zhihu.com/?target=https%3A//developer.apple.com/safari/technology-preview/release-notes/">Safari TP 97</a> 和 Chrome 65+ 中被支持；</li>
+  <li>TC39 提出了 <a href="https://link.zhihu.com/?target=https%3A//tc39.github.io/proposal-binary-ast/">Binary AST 提案</a>，旨在压缩 JavaScript 冷启动过程中的编译与字节码生成时间；</li>
+  <li>基于 ES modules 的 <a href="https://link.zhihu.com/?target=https%3A//w3c.github.io/webcomponents/spec/imports/">HTML Imports</a> 重回标准，<a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5144752345317376">Chrome 80</a> 也已经正式支持；</li>
+  <li>网页数学公式标记语言 <a href="https://link.zhihu.com/?target=https%3A//mathml-refresh.github.io/mathml-core/">MathML</a> 与 Chrome <a href="https://link.zhihu.com/?target=https%3A//groups.google.com/a/chromium.org/forum/%23!msg/blink-dev/OOZIrtSPLeM/sEqeg4H2BQAJ">「重归于好」</a>，Igalia 公司正在全力为 Chrome 实现新的 MathML，<a href="https://link.zhihu.com/?target=https%3A//mathml.igalia.com/news/2019/08/28/mathml-and-browsers/">MathML 与浏览器的爱恨情仇</a>在庚子之年能否了结，我们拭目以待。</li>
+</ul>
+
+<p><strong>CSS 飞速发展</strong></p>
+
+<ul>
+  <li>过去一年里，很高兴几乎再也听不到 IE6，取而代之的是 Android。Flexbox 成为无线页面布局首选，CSS Grid 也逐渐普及，Firefox 71 也率先支持了 <a href="https://link.zhihu.com/?target=https%3A//bugzilla.mozilla.org/show_bug.cgi%3Fid%3D1580894">Subgrid</a>；</li>
+  <li>随着 macOS/iOS 带起的深色模式浪潮，主流浏览器也也实现了 CSS 媒体查询属性 <code class="language-plaintext highlighter-rouge">prefers-color-scheme</code>，Web 与操作系统的无缝体验更加顺滑；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5679432723333120">backdrop-filter</a> 属性在 Chrome 76 中迎来无前缀版本，Web 页面可以更加方便的实现背景滤镜；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//caniuse.com/%23feat%3Dcss-snappoints">CSS Scroll Snap</a> 规范趋于稳定，主流浏览器也已经全部实现无前缀版本。CSS 也可以实现简单的轮播切换了；</li>
+  <li>文字与字体上，<a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-fonts-4/%23descdef-font-face-font-variation-settings">Variable Fonts</a>（可变字体）技术快速发展，为字体创作带来了无限遐想的空间。<a href="https://zhuanlan.zhihu.com/write">line-clamp</a> 多行溢出控制属性<a href="https://link.zhihu.com/?target=https%3A//github.com/w3c/csswg-drafts/commit/41bdbcd2411ed7230f32ec6396a9d8448714b95a">正式进入规范</a>，Edge 和 Firefox 也都支持了历史遗留的前缀属性：<code class="language-plaintext highlighter-rouge">-webkit-line-clamp</code>；</li>
+  <li>数学计算上，有了全新的 <code class="language-plaintext highlighter-rouge">min()、max()、clamp()</code><a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-values-4/%23comp-func">比较函数</a>，传统的预处理器有的功能，CSS 也逐渐完善。<a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-variables-1/">自定义属性</a>进入普及阶段，在实现动态换肤等场景时大放异彩；</li>
+  <li>CSS Houdini 进展略慢，只有 <a href="https://link.zhihu.com/?target=https%3A//drafts.css-houdini.org/css-properties-values-api/">CSS Properties and Values API </a>进入 Chrome 78，<a href="https://link.zhihu.com/?target=https%3A//drafts.css-houdini.org/css-animationworklet/">Animation Worklet</a> 进入 Chrome 71。路漫漫其修远兮，Houdini 未来还有很长的路要走。</li>
+  <li>CSS 框架方面，根据 <a href="https://link.zhihu.com/?target=http%3A//stateofcss.com">http://stateofcss.com</a> 的<a href="https://link.zhihu.com/?target=https%3A//2019.stateofcss.com/technologies/css-frameworks/">统计</a>，Bootstrap 持续走低，但各种基于它的主题和插件依然火热。基于原子类的 Tailwind CSS 满意度达到了 81%，不得不让我们重新思考 CSS 到底该如何编写？</li>
+</ul>
+
+<h2 id="端技术">端技术</h2>
+
+<p><strong>跨端技术机遇与危机并存</strong></p>
+
+<p>2019 年发展得较快的跨端框架有：</p>
+
+<ul>
+  <li>Flutter 于年初发布了正式版 1.0，并<a href="https://link.zhihu.com/?target=https%3A//medium.com/flutter/announcing-flutter-1-12-what-a-year-22c256ba525d">快速迭代到了 1.12</a>；</li>
+  <li>基于 Web Component 的跨端框架 Ionic <a href="https://link.zhihu.com/?target=https%3A//blog.ionicframework.com/introducing-ionic-4-ionic-for-everyone/">年初发布了 4.0</a>，并随后支持了 <a href="https://link.zhihu.com/?target=https%3A//ionicframework.com/blog/announcing-ionic-react/">Ionic React</a>；</li>
+</ul>
+
+<p>而国内编译到各大小程序也成为跨端框架的一个刚需：</p>
+
+<ul>
+  <li>W3C 发布了<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/mini-app-white-paper/">小程序标准化白皮书</a>；</li>
+  <li>百度搜索<a href="https://link.zhihu.com/?target=https%3A//v.qq.com/x/page/t0845uaipjp.html">全面接入百度小程序</a>，将致搜索权重提升；</li>
+  <li>年末，腾讯<a href="https://zhuanlan.zhihu.com/p/98945706">开源跨端框架 hippy</a>；</li>
+  <li>过去两年崭露头角的 <a href="https://link.zhihu.com/?target=https%3A//github.com/Tencent/wepy">wepy</a> 和 <a href="https://link.zhihu.com/?target=https%3A//github.com/NervJS/taro">taro</a> 开发依然活跃，而 <a href="https://link.zhihu.com/?target=https%3A//github.com/Meituan-Dianping/mpvue">mpVue</a> 已有半年以上没有维护。</li>
+</ul>
+
+<p>容器亦有新公司入局：</p>
+
+<ul>
+  <li><a href="https://link.zhihu.com/?target=https%3A//github.com/microsoft/react-native-windows">React Native on Windows</a> 于 2019 年 Microsoft Build 提出；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//blogs.windows.com/msedgedev/2019/06/18/building-hybrid-applications-with-the-webview2-developer-preview/">微软发布了 WebView 2 预览版</a>，允许开发者在 Windows 原生应用中展示网页内容；</li>
+</ul>
+
+<p><strong>隐私与安全越来越受重视</strong></p>
+
+<p>浏览器和 Node.js 端有如下安全更新：</p>
+
+<ul>
+  <li>不安全的 TLS 1.0 和 1.1 默认被禁用（<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/9526/release-notes-for-safari-technology-preview-91/">Safari TP 91</a>、Google Chrome 72+、Firefox Nightly）；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//bugzilla.mozilla.org/show_bug.cgi%3Fid%3D1522083">Firefox 67 开始</a>，<code class="language-plaintext highlighter-rouge">、</code> 自动附加 <code class="language-plaintext highlighter-rouge">rel="noopener"</code>，以防止新页面恶意篡改当前页面；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//chromestatus.com/feature/5826576096690176">Chrome 69 开始</a>支持 Content-Security-Policy 的 report-to 指令，此指令支持了合并多个违规上报请求；</li>
+  <li>Chrome 76 起实现 <a href="https://link.zhihu.com/?target=https%3A//w3c.github.io/webappsec-fetch-metadata/">Fetch Metadata 请求头提案</a> ，允许请求时带上上下文，使服务器端可以进行安全相关的校验；</li>
+  <li>Node.js 12.7.0+ 支持了 <code class="language-plaintext highlighter-rouge">--policy-integrity=sri</code>，可以让不符合 <a href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> 规范的请求在服务端执行任何代码前就被拦截。</li>
+</ul>
+
+<p>对于前端指纹技术和跨站追踪，也有更多的浏览器限制：</p>
+
+<ul>
+  <li>在调用传感器接口时，<a href="https://link.zhihu.com/?target=https%3A//bugs.chromium.org/p/chromium/issues/detail%3Fid%3D796904">Chrome 75+ 将弹出警告</a>，Safari 12 默认禁止，防止利用传感器接口辅助生成指纹；</li>
+  <li>Safari 12+ 中<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/8828/intelligent-tracking-prevention-2-2/">包含了更新的智能跟踪预防模块</a>，限制了采用跨站追踪技术的网站写入第三方 Cookie。</li>
+</ul>
+
+<p><strong>性能优化被浏览器更多考量</strong></p>
+
+<p>Chrome 提出<a href="https://link.zhihu.com/?target=https%3A//github.com/WICG/display-locking">展现锁定提案</a>，使得开发者可以跳过部分渲染，子规范在后续更新陆续得到实验性支持：</p>
+
+<ul>
+  <li>Chrome 76 <a href="https://link.zhihu.com/?target=https%3A//web.dev/native-lazy-loading">原生支持了 Lazy Loading</a>，可以直接在 img、iframe 标签上增加 loading 属性来实现懒加载；</li>
+  <li>Chrome 79 <a href="https://link.zhihu.com/?target=https%3A//developers.google.com/web/updates/2019/12/nic79%23rendersubtree">新增 HTML rendersubtree 属性</a>，用来控制部分 DOM 是否立即呈现；</li>
+  <li>Chrome 80 <a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5737051062272000">实现了 CSS intrinsic-size 属性</a>，在 img 或 video 元素未加载的时候可以用来设置占位的高度。</li>
+</ul>
+
+<p>多个浏览器团队也在过去一年更新了相关的性能优化故事：</p>
+
+<ul>
+  <li>V8 团队<a href="https://link.zhihu.com/?target=https%3A//v8.dev/blog/react-cliff">介绍了 React 遭遇 V8 性能悬崖的故事</a>，带我们了解了 V8 内部的存储数据的机制和优化；</li>
+  <li>V8 团队发表了博文 <a href="https://link.zhihu.com/?target=https%3A//v8.dev/blog/cost-of-javascript-2019">The cost of JavaScript in 2019</a>，介绍在新时代下我们对 JavaScript 代码的优化策略；</li>
+  <li>WebKit 团队的这篇文章<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/8970/how-web-content-can-affect-power-usage/">讨论了如何让网页更节能</a>；</li>
+  <li>FireFox 介绍了给 JavaScript 执行管道中<a href="https://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2019/08/the-baseline-interpreter-a-faster-js-interpreter-in-firefox-70/">添加了 Baseline Interpreter</a> 如何使得页面加载速度提升。</li>
+</ul>
+
+<h2 id="javascript-与框架">JavaScript 与框架</h2>
+
+<p><strong>Hooks 元年与并发渲染</strong></p>
+
+<p>Hooks 抛弃了传统的生命周期模型，保证了更细粒度和更简洁的逻辑抽象：</p>
+
+<ul>
+  <li>React 16.8 <a href="https://link.zhihu.com/?target=https%3A//reactjs.org/blog/2019/02/06/react-v16.8.0.html">于年初发布</a>，正式支持了 React Hooks；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//github.com/vuejs/vue-next">Vue 3.0 Pre-Alpha 的源码公开</a>，也将支持 Hooks 风格的代码，将于 2020 年 Q1 正式发布；</li>
+  <li>社区热门库均已推出 hooks 版本，如 <a href="https://link.zhihu.com/?target=https%3A//github.com/reduxjs/react-redux/releases/tag/v7.1.0">react-redux 7.1+</a>、<a href="https://link.zhihu.com/?target=https%3A//github.com/ReactTraining/react-router/releases/tag/v5.1.0">react-router 5.1+</a>、<a href="https://link.zhihu.com/?target=https%3A//github.com/react-dnd/react-dnd/releases/tag/v7.6.0">react-dnd 7.6+</a> 等等，而 <a href="https://link.zhihu.com/?target=https%3A//www.styled-components.com/">styled-components</a> 等库也进入了 Hooks 测试支持阶段。</li>
+</ul>
+
+<p>并发渲染特性在 React Roadmap 的前列，此模式还没有在稳定版本支持：</p>
+
+<ul>
+  <li>官方已发布了<a href="https://link.zhihu.com/?target=https%3A//reactjs.org/docs/concurrent-mode-intro.html">并发模式的文档</a>；</li>
+  <li>官方也介绍了<a href="https://link.zhihu.com/?target=https%3A//reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html">渲染和获取数据同时进行的最佳实践</a>；</li>
+  <li>React 16.10.1 起<a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/react/blob/master/CHANGELOG.md%2316100-september-27-2019">实验性实现了调度器 Scheduler</a>，支持了 useSubscription 以实现并发安全的事件系统。</li>
+</ul>
+
+<p><strong>Node.js 稳步迭代，又有新人入场</strong></p>
+
+<p>Node.js 一年一更新，一年一淘汰：</p>
+
+<ul>
+  <li>去年 4 月 30 日，<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en/blog/release/v6.17.1/">Node.js 6 的维护正式终止</a>；</li>
+  <li>Node.js 12 <a href="https://link.zhihu.com/?target=https%3A//medium.com/%40nodejs/introducing-node-js-12-76c41a1b3f3f">该版本带来了巨大的性能提升</a>，TLS 1.3 默认开启；</li>
+  <li>Node.js 12.11 起，worker_thread 模块<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en/blog/release/v12.11.0/">正式进入稳定版</a>；</li>
+  <li>Node.js 13 起，<a href="https://link.zhihu.com/?target=https%3A//medium.com/%40nodejs/announcing-core-node-js-support-for-ecmascript-modules-c5d6dc29b663">默认支持了 ESM</a>，ESM 允许在源代码中使用 <code class="language-plaintext highlighter-rouge">import</code> 和 <code class="language-plaintext highlighter-rouge">export</code> 来引入相关包。</li>
+</ul>
+
+<p>但仍有不满足于 Node.js 和 V8 的人，他们都在尝试提供更受控的脚本运行时环境：</p>
+
+<ul>
+  <li>Node.js 作者<a href="https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3Dz6JRlx5NC9E">更新了 deno 动向</a>，但原定于去年夏发布的 1.0 版本<a href="https://link.zhihu.com/?target=https%3A//github.com/denoland/deno/issues/2473">依然没有到来﻿</a>；</li>
+  <li>FFmpeg 作者发布了 JavaScript 引擎：<a href="https://link.zhihu.com/?target=https%3A//bellard.org/quickjs/">QuickJS</a>，专注于提供嵌入式环境的运行时；</li>
+  <li>Facebook 开源了 JavaScript 引擎：<a href="https://link.zhihu.com/?target=https%3A//code.fb.com/android/hermes/">Hermes</a>，专注于提高 React Native 应用的性能；</li>
+</ul>
+
+<p>此外，不能遗忘 Make JavaScript Great Again 的 TypeScript：</p>
+
+<ul>
+  <li>TypeScript <a href="https://link.zhihu.com/?target=https%3A//www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html">迭代到了 3.7 版本</a>，支持大量 TC39 stage 3 的特性如 Top-Level Await、Nullish Coalescing 等</li>
+  <li>2019 年是 TypeScript <a href="https://link.zhihu.com/?target=https%3A//2019.stateofjs.com/">渗透率突飞猛进</a>的一年</li>
+</ul>
+
+<h2 id="致谢">致谢</h2>
+
+<p>感谢一直以来默默坚持的四位轮值编辑：<a href="https://www.zhihu.com/people/humphry-huang">承虎</a>、<a href="https://www.zhihu.com/people/ysbl">一丝</a>、<a href="https://www.zhihu.com/people/bigfeng">池冰</a>、<a href="https://www.zhihu.com/people/mochen16">墨尘</a>，以及特邀编辑：<a href="https://www.zhihu.com/people/zi-yun-fei">紫云飞</a>；感谢各位加班之余挤出时间来编写、审稿、P 图。</p>
+
+<p>更加需要感谢的是各位粉丝朋友，是你们一直以来的关注与点赞给了我们最大的动力。新的一年里，我们将继续秉承：原创、求精、求严的精神，努力做的更好！
+鲜衣怒马归来时，愿君依旧少年心……</p>
+
+<hr />
+
+<p>本期编辑：承虎、一丝 &amp; 审阅：一丝</p>

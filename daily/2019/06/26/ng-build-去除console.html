@@ -1,0 +1,19 @@
+<ul>
+  <li>使用environment
+    <ul>
+      <li>environment.ts中，production= false</li>
+      <li>environment.prod.ts中，production= true</li>
+    </ul>
+  </li>
+  <li>main.ts中
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  if (environment.production) {
+  enableProdMode();
+  // console
+  window.console.log=function(){}
+  window.console.dir=function(){}
+  }
+
+</code></pre></div>    </div>
+  </li>
+</ul>
