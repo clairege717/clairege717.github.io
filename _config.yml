@@ -25,7 +25,7 @@ email: claire_ge@126.com
 description: >- # this means to ignore newlines until "baseurl:"
   好好学习，热爱工作，享受生活。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://clairege717.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  clairege717
 keyword: "前端 技术栈"
 
