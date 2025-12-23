@@ -5,10 +5,10 @@
 ## 项目包含内容
 
 - 文章与笔记
-  - `Daily/`：日常记录、工作/生活小记
+  - `Daily/`：日常记录、工作/生活小记（内容已转换并移动到 `_posts/` 目录）
   - `Front-End/`：前端技术栈学习笔记
   - `7788/`：杂七杂八的信息记录
-  - `_posts/`：按时间发布的文章（Jekyll 默认文章目录）
+  - `_posts/`：按时间发布的文章（Jekyll 默认文章目录，包含从 `Daily/` 转换的内容）
 - 页面与布局
   - `_layouts/`：页面布局（home/page/about/archives 等）
   - `_includes/`：可复用片段（head/nav/footer 等）
@@ -53,7 +53,7 @@ bundle exec jekyll build
 
 ## TODO
 
-- [ ] 整理目录命名与分类（如 `Front-End`、`Daily` 的归档规则）
+- [x] 整理目录命名与分类（如 `Front-End`、`Daily` 的归档规则） - Daily目录内容已转换为Jekyll格式并迁移到_posts目录
 - [ ] 增加站内搜索/标签页
 - [ ] 增加评论系统（例如 Giscus/Disqus）
 - [ ] 优化页面性能与资源体积（图片压缩、按需加载）

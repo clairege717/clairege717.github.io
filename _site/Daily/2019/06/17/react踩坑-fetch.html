@@ -1,0 +1,36 @@
+<h2 id="一fetch">一、fetch</h2>
+
+<ul>
+  <li>
+    <h3 id="already-read">Already read</h3>
+
+    <p>已经调用了 <code class="language-plaintext highlighter-rouge">response.json()</code>，这个时候重复调用该方法时就会报错。（实际上，再次调用其它任何转换方法，如 <code class="language-plaintext highlighter-rouge">.text()</code> 也会报错）</p>
+  </li>
+  <li>
+    <h3 id="fetch请求对某些错误http状态不会reject">fetch请求对某些错误http状态不会reject</h3>
+
+    <p>fetch返回的promise在某些错误的http状态下如400、500等不会reject</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">checkStatus</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">&gt;=</span> <span class="mi">200</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">response</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kd">const</span> <span class="nx">error</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">statusText</span><span class="p">);</span>
+  <span class="nx">error</span><span class="p">.</span><span class="nx">response</span> <span class="o">=</span> <span class="nx">response</span><span class="p">;</span>
+  <span class="k">throw</span> <span class="nx">error</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">parseJSON</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">request</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">opt</span> <span class="o">=</span> <span class="nx">options</span><span class="o">||</span><span class="p">{};</span>
+  <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="p">{</span><span class="na">credentials</span><span class="p">:</span> <span class="dl">'</span><span class="s1">include</span><span class="dl">'</span><span class="p">,</span> <span class="p">...</span><span class="nx">opt</span><span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">checkStatus</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">parseJSON</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span> <span class="nx">data</span> <span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span> <span class="nx">err</span> <span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+

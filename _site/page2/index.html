@@ -59,28 +59,8 @@
             
             
             <li class="tags-item list-inline-item border rounded-pill">
-                <a class="text-secondary text-decoration-none" href="/tags/#生活生活" title="生活生活" rel="5">
-                    生活生活
-                </a>
-            </li>
-            
-            
-            
-            <li class="tags-item list-inline-item border rounded-pill">
-                <a class="text-secondary text-decoration-none" href="/tags/#测试测" title="测试测" rel="2">
-                    测试测
-                </a>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            <li class="tags-item list-inline-item border rounded-pill">
-                <a class="text-secondary text-decoration-none" href="/tags/#前端" title="前端" rel="2">
-                    前端
+                <a class="text-secondary text-decoration-none" href="/tags/#daily" title="daily" rel="42">
+                    daily
                 </a>
             </li>
             
@@ -96,17 +76,134 @@
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             
 <div class="post-preview">
-    <a href="/jekyll/update/2018/05/27/welcome-to-jekyll.html">
+    <a href="/daily/2020/05/17/ontouchstart.html">
         <h2 class="post-title">
-            Welcome to Jekyll!
+            20200517-ontouchstart
         </h2>
         
         <div class="post-content-preview">
-            You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je...
+            body中添加ontouchstart:&lt;body ontouchstart=""&gt;，active兼容处理 即伪类:active失效
+
+方法一：body添加ontouchstart:&lt;body ontouchstart=""&gt;
+
+方法二：js给 document 绑定 touchstart 或 touchend 事件
+&lt;style&gt;
+   a {
+    ...
         </div>
     </a>
     <p class="post-meta">
-        Posted by Claire on 2018-05-27
+        Posted by 燕过留声 on 2020-05-17
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2020/01/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F.html">
+        <h2 class="post-title">
+            20200108-Vue响应式
+        </h2>
+        
+        <div class="post-content-preview">
+            Vue2的数据响应式原理
+
+
+  
+    什么是defineProperty
+
+    defineProperty是定义对象的属性
+
+    defineProperty其实不是核心的为一个对象做数据双向绑定，而是去给对象做属性标签，只不过属性里的get和set实现了响应式
+
+    
+      
+        
+          属性名
+          默认值
+       ...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2020-01-08
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2020/01/08/JavaScript%E5%BA%95%E5%B1%82%E6%9C%BA%E5%88%B6.html">
+        <h2 class="post-title">
+            20200108-JavaScript底层机制
+        </h2>
+        
+        <div class="post-content-preview">
+            
+  JavaScript执行过程-eventloop
+    setTimeout(function(){
+    console.log('set1')// 3
+})
+
+new Promise((resolve)=&gt;{
+    console.log('pr1');// 0
+    resolve();
+}).then(function(){
+    console.log('th...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2020-01-08
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2020/01/07/%E8%BD%AC2019%E5%89%8D%E7%AB%AF%E5%9B%9E%E9%A1%BE.html">
+        <h2 class="post-title">
+            20200107-转2019前端回顾
+        </h2>
+        
+        <div class="post-content-preview">
+            20200107-转2019前端回顾
+转自知乎阿里妈妈前端快爆
+
+不知不觉，二零一九悄然离去。《阿里妈妈前端快爆》从最早的内部第一篇文章算起，已经走过两个多年头了。回顾过去，我们梳理了 2019 年值得了解的技术发展脉络，与诸位细品。
+
+标准进行时
+
+ECMAScript 2019 如期到来
+
+ECMAScript 2019 年包含这些更新：
+
+
+  Array.prototype.flat...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2020-01-07
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/daily/2020/01/07/webpack.html">
+        <h2 class="post-title">
+            20200107-webpack
+        </h2>
+        
+        <div class="post-content-preview">
+            module.exports = {
+    mode: 'development',
+    entry: {
+        // 入口文件: string || array || object
+        app: 'app.js',
+        app2: 'app2.js'
+    },
+    output: {
+        // 出口文件: 
+        fil...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 燕过留声 on 2020-01-07
     </p>
 </div>
 <hr>
@@ -120,6 +217,10 @@
         <a href="/">&larr; 上一页</a>
     </li>
     
+    
+    <li class="next">
+        <a href="/page3">下一页 &rarr;</a>
+    </li>
     
 </ul>
 

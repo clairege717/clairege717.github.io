@@ -1,0 +1,75 @@
+<p><a href="https://blog.csdn.net/twodogya/article/details/86620289">【React踩坑记】React项⽬目报错Can’t perform a React state update on an unmounted component</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>意思为:我们不不能在组件销毁后设置state，防⽌止出现内存泄漏漏的情况 分析出现问题的原因:
+</code></pre></div></div>
+
+<p>我这⾥里里在组件加载完成的钩⼦子函数⾥里里调⽤用了了⼀一个EventBus的异步⽅方法， 如果监听到异步⽅方法，则会更更新state中isShowNav的值。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>解决⽅方法 我们应该在组件销毁的时候将异步⽅方法撤销
+</code></pre></div></div>
+
+<h1 id="cant-perform-a-react-state-update-on-an-unmounted-component">Can’t perform a React state update on an unmounted component.</h1>
+
+<p>https://blog.csdn.net/u010395357/article/details/87990271</p>
+
+<p>字面意思是：无法对卸载的的组件执行响应状态更新，也就是卸载后的组件不能设置state状态。</p>
+
+<p>警告详情：</p>
+
+<blockquote>
+  <p>​    Can’t perform a React state update on an unmounted component. 
+This is a no-op, but it indicates a memory leak in your application.</p>
+
+  <p>​    To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method</p>
+</blockquote>
+
+<h4 id="这种问题一般是由于延时设置state值或者是异步状态下设置state值导致的">这种问题一般是由于延时设置state值，或者是异步状态下设置state值导致的。</h4>
+
+<p>解决方案代码如下：</p>
+
+<ul>
+  <li>
+    <p>如果代码中有定时器一类的延时设置state状态的代码，可以在组件销毁时清除定时器</p>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">componentWillUnmount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timer</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>如果有异步设置state值的情况，在组件销毁时清除所有的state状态</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">componentWillUnmount</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span> <span class="o">=</span> <span class="p">(</span><span class="nx">state</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="rn-常见问题">RN 常⻅见问题</h1>
+<p>ExceptionsManager.js:74 (0 , _redux.default) is not a function</p>
+
+<p>In Reducer (Index.js), change the import statement to import { combineReducers } from “redux”</p>
+
+<p>ExceptionsManager.js:74 (0 , _redux.default) is not a function</p>
+
+<ol>
+  <li>
+    <p>combineReducers</p>
+
+    <p>import { combineReducers } from “redux”</p>
+  </li>
+  <li>
+    <p>connect</p>
+
+    <p>import { connect } from ‘react-redux’</p>
+  </li>
+  <li>
+    <p>actions</p>
+
+    <p>In my case adding {} to the import from my actions resolved this issue!</p>
+  </li>
+</ol>
+

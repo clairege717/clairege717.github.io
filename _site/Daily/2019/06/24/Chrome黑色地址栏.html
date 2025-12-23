@@ -1,0 +1,24 @@
+<ol>
+  <li>查看Bundle Identifier
+在Terminal中输入
+    <blockquote>
+      <p>osascript -e ‘id of app “Google Chrome”’
+得到
+com.google.Chrome</p>
+    </blockquote>
+  </li>
+  <li>再使用如下命令
+    <blockquote>
+      <p>defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool yes</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>重启Chrome
+即使macOS使用dark mode，chrome也会使用light mode</p>
+  </li>
+  <li>如果要使用回深色模式，使用如下命令
+    <blockquote>
+      <p>defaults delete com.google.Chrome NSRequiresAquaSystemAppearance</p>
+    </blockquote>
+  </li>
+</ol>

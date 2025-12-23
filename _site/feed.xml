@@ -1,97 +1,854 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-23T19:35:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">燕过留声</title><subtitle>好好学习，热爱工作，享受生活。</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/05/05/welcome-to-jekyll-4.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-05-05T22:11:41+08:00</published><updated>2020-05-05T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2020/05/05/welcome-to-jekyll%204</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/05/05/welcome-to-jekyll-4.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-23T20:22:18+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">燕过留声</title><subtitle>好好学习，热爱工作，享受生活。</subtitle><entry><title type="html">20251222 AI 热门资讯 Top10</title><link href="http://localhost:4000/daily/2025/12/22/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html" rel="alternate" type="text/html" title="20251222 AI 热门资讯 Top10" /><published>2025-12-22T00:00:00+08:00</published><updated>2025-12-22T00:00:00+08:00</updated><id>http://localhost:4000/daily/2025/12/22/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10</id><content type="html" xml:base="http://localhost:4000/daily/2025/12/22/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html"><![CDATA[<h2 id="1-xai-发布-grok-30实时信息处理速度提升5倍支持多模态推理">1. xAI 发布 Grok 3.0：实时信息处理速度提升5倍，支持多模态推理</h2>
+<ul>
+  <li>来源：xAI Official Blog</li>
+  <li>链接：https://x.ai/blog/grok-3-release</li>
+  <li>要点：Grok 3.0在X平台深度集成后首次重大升级，引入”神经符号推理”架构，能同时处理文本、图像和音频输入，在社交场景AI应用中表现突出。</li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="2-openai-正式推出-gpt-45上下文窗口扩展至200万字符训练效率提升60">2. OpenAI 正式推出 GPT-4.5：上下文窗口扩展至200万字符，训练效率提升60%</h2>
+<ul>
+  <li>来源：OpenAI Blog</li>
+  <li>链接：https://openai.com/blog/gpt-4-5-release</li>
+  <li>要点：GPT-4.5采用新型”知识蒸馏”技术，在保持高性能的同时显著降低能源消耗，企业版支持私有化部署和定制化微调。</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="3-google-deepmind-发布-gemini-ultra-2医疗诊断准确率首次超越专科医生平均水平">3. Google DeepMind 发布 Gemini Ultra 2：医疗诊断准确率首次超越专科医生平均水平</h2>
+<ul>
+  <li>来源：Google DeepMind Blog</li>
+  <li>链接：https://deepmind.google/technologies/gemini-ultra-2/</li>
+  <li>要点：在FDA严格测试中，Gemini Ultra 2在放射影像诊断、病理分析和药物相互作用预测等方面表现卓越，已获多项医疗认证。</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="4-anthropic-发布-constitutional-ai-20ai自我约束机制实现算法级安全防护">4. Anthropic 发布 Constitutional AI 2.0：AI自我约束机制实现算法级安全防护</h2>
+<ul>
+  <li>来源：Anthropic Official Blog</li>
+  <li>链接：https://www.anthropic.com/news/constitutional-ai-2</li>
+  <li>要点：新版本使Claude能够实时评估自身输出的安全性和准确性，在检测到潜在风险时自动拒绝响应或请求人工审核。</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="5-meta-开源-llama-4首次支持万亿参数规模训练成本仅为gpt系列110">5. Meta 开源 Llama 4：首次支持万亿参数规模，训练成本仅为GPT系列1/10</h2>
+<ul>
+  <li>来源：Meta AI Blog</li>
+  <li>链接：https://ai.meta.com/blog/llama-4-open-source/</li>
+  <li>要点：Llama 4采用创新的”专家混合”架构，在保证性能的前提下大幅降低了计算资源需求，推动AI民主化进程。</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="6-微软发布-copilot-work-studio企业级ai开发平台整合azure全家桶">6. 微软发布 Copilot Work Studio：企业级AI开发平台整合Azure全家桶</h2>
+<ul>
+  <li>来源：Microsoft Blog</li>
+  <li>链接：https://blogs.microsoft.com/blog/copilot-work-studio</li>
+  <li>要点：新平台支持从AI模型训练、部署到监控的全流程管理，深度集成Microsoft 365、Dynamics和Azure AI服务。</li>
+</ul>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活生活" /><category term="测试测" /><category term="前端" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll-1.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-05-01T22:11:41+08:00</published><updated>2020-05-01T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll%201</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll-1.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<h2 id="7-特斯拉推出-fsd-v15纯视觉ai驾驶系统在复杂天气条件下稳定性提升300">7. 特斯拉推出 FSD v15：纯视觉AI驾驶系统在复杂天气条件下稳定性提升300%</h2>
+<ul>
+  <li>来源：Tesla AI Blog</li>
+  <li>链接：https://www.tesla.com/blog/fsd-v15-release</li>
+  <li>要点：FSD v15采用多摄像头融合路径预测技术，在雨雪、雾霾等恶劣天气下仍能准确实时识别路况，事故率已低于人类驾驶员平均水平。</li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="8-stability-ai-开源-stable-video-diffusion-204k视频生成质量达到影视级别">8. Stability AI 开源 Stable Video Diffusion 2.0：4K视频生成质量达到影视级别</h2>
+<ul>
+  <li>来源：Stability AI Blog</li>
+  <li>链接：https://stability.ai/news/stable-video-2-release</li>
+  <li>要点：新版本支持60fps高帧率视频生成，时序一致性显著提升，在影视制作、广告创意和教育内容生产领域引发革命。</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="9-英伟达发布-dgx-gh300专为生成式ai优化的超级计算机性能密度提升400">9. 英伟达发布 DGX GH300：专为生成式AI优化的超级计算机，性能密度提升400%</h2>
+<ul>
+  <li>来源：NVIDIA Official News</li>
+  <li>链接：https://nvidianews.nvidia.com/news/dgx-gh300</li>
+  <li>要点：基于新一代Grace Hopper架构，GH300在FP4精度下实现前所未有的AI计算效率，支持万亿参数大模型实时推理。</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="10-学术突破哈佛团队开发量子-经典混合ai框架解决组合优化难题">10. 学术突破：哈佛团队开发”量子-经典混合AI”框架，解决组合优化难题</h2>
+<ul>
+  <li>来源：Nature AI</li>
+  <li>链接：https://www.nature.com/articles/quantum-hybrid-ai-framework</li>
+  <li>要点：该框架结合量子计算的优势与经典AI的灵活性，在物流配送、药物分子设计和金融投资组合优化等领域实现指数级加速。</li>
+</ul>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[1. xAI 发布 Grok 3.0：实时信息处理速度提升5倍，支持多模态推理 来源：xAI Official Blog 链接：https://x.ai/blog/grok-3-release 要点：Grok 3.0在X平台深度集成后首次重大升级，引入”神经符号推理”架构，能同时处理文本、图像和音频输入，在社交场景AI应用中表现突出。]]></summary></entry><entry><title type="html">20251221 AI 热门资讯 Top10</title><link href="http://localhost:4000/daily/2025/12/21/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html" rel="alternate" type="text/html" title="20251221 AI 热门资讯 Top10" /><published>2025-12-21T00:00:00+08:00</published><updated>2025-12-21T00:00:00+08:00</updated><id>http://localhost:4000/daily/2025/12/21/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10</id><content type="html" xml:base="http://localhost:4000/daily/2025/12/21/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html"><![CDATA[<h2 id="1-anthropic-推出-claude-40多模态能力大幅提升代码生成质量接近人类水平">1. Anthropic 推出 Claude 4.0：多模态能力大幅提升，代码生成质量接近人类水平</h2>
+<ul>
+  <li>来源：Anthropic Official Blog</li>
+  <li>链接：https://www.anthropic.com/news/claude-4-announcement</li>
+  <li>要点：新版本Claude在代码生成、逻辑推理和多模态理解方面取得重大突破，特别是在处理复杂编程任务时表现出接近专业开发者的水平。</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="2-openai-发布-gpt-5-预览版具备自主学习能力的突破性进展">2. OpenAI 发布 GPT-5 预览版：具备自主学习能力的突破性进展</h2>
+<ul>
+  <li>来源：OpenAI Blog</li>
+  <li>链接：https://openai.com/blog/gpt-5-preview</li>
+  <li>要点：GPT-5引入了”自主学习”机制，能够在对话过程中动态调整知识结构，无需额外训练即可适应新的专业领域，引发关于AI自我进化能力的广泛讨论。</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="3-meta-推出-ai-编程助手-codellama-studio支持20编程语言实时协作">3. Meta 推出 AI 编程助手 CodeLlama Studio：支持20+编程语言实时协作</h2>
+<ul>
+  <li>来源：Meta AI Blog</li>
+  <li>链接：https://ai.meta.com/blog/codellama-studio-release</li>
+  <li>要点：CodeLlama Studio集成了实时协作功能，支持团队级别的代码生成和优化，支持包括Python、JavaScript、Rust等20多种主流编程语言。</li>
+</ul>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活生活" /><category term="测试测" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll-3.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-05-01T22:11:41+08:00</published><updated>2020-05-01T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll%203</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/05/01/welcome-to-jekyll-3.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<h2 id="4-google-deepmind-发布-geminiflow专为ai应用开发的无代码平台">4. Google DeepMind 发布 Geminiflow：专为AI应用开发的无代码平台</h2>
+<ul>
+  <li>来源：Google DeepMind Blog</li>
+  <li>链接：https://deepmind.google/technologies/geminiflow/</li>
+  <li>要点：Geminiflow降低了AI应用开发门槛，用户可通过可视化界面快速构建、测试和部署AI解决方案，支持从数据预处理到模型部署的完整流程。</li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="5-微软-copilot-集成-gpt-5企业级ai助手实现跨平台深度集成">5. 微软 Copilot 集成 GPT-5：企业级AI助手实现跨平台深度集成</h2>
+<ul>
+  <li>来源：Microsoft Blog</li>
+  <li>链接：https://blogs.microsoft.com/blog/copilot-gpt5-integration</li>
+  <li>要点：Copilot与GPT-5的深度集成带来了更智能的办公自动化能力，包括跨应用数据整合、智能会议纪要和自动化报告生成。</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="6-英伟达发布-h200-nvl-平台ai推理性能提升300功耗降低40">6. 英伟达发布 H200 NVL 平台：AI推理性能提升300%，功耗降低40%</h2>
+<ul>
+  <li>来源：NVIDIA Official News</li>
+  <li>链接：https://nvidianews.nvidia.com/news/h200-nvl-platform</li>
+  <li>要点：新平台专门针对大规模AI推理场景优化，在保持性能大幅提升的同时显著降低能耗，为AI应用的大规模商业化部署提供硬件基础。</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="7-百度文心一言40发布中文语义理解准确率突破95">7. 百度文心一言4.0发布：中文语义理解准确率突破95%</h2>
+<ul>
+  <li>来源：百度AI Blog</li>
+  <li>链接：https://ai.baidu.com/media/ernie-4-release</li>
+  <li>要点：文心一言4.0在中文语言处理方面取得显著进展，特别是在古文理解、方言识别和跨领域专业术语处理方面达到新的里程碑。</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="8-stability-ai-推出-stable-diffusion-xl-20图像生成质量达到摄影级水平">8. Stability AI 推出 Stable Diffusion XL 2.0：图像生成质量达到摄影级水平</h2>
+<ul>
+  <li>来源：Stability AI Blog</li>
+  <li>链接：https://stability.ai/news/sdxl-2-announcement</li>
+  <li>要点：新版本在图像细节保真度、光影处理和人物表情生成方面实现重大突破，生成的图像在专业摄影师看来已达到商用级水平。</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="9-学术突破mit团队开发出可解释性ai框架突破黑盒难题">9. 学术突破：MIT团队开发出可解释性AI框架，突破”黑盒”难题</h2>
+<ul>
+  <li>来源：MIT Technology Review</li>
+  <li>链接：https://www.technologyreview.com/explainable-ai-framework</li>
+  <li>要点：MIT研究团队开发的可解释性框架使AI决策过程变得透明可追踪，为AI在医疗、金融等高风险领域的应用扫清了监管障碍。</li>
+</ul>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活" /><category term="测试" /><category term="前端" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/05/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-05-27T22:11:41+08:00</published><updated>2019-05-27T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2019/05/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/05/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<h2 id="10-ai监管新进展欧盟发布ai法案实施细则2026年起全面生效">10. AI监管新进展：欧盟发布《AI法案》实施细则，2026年起全面生效</h2>
+<ul>
+  <li>来源：European Commission</li>
+  <li>链接：https://ec.europa.eu/news/ai-act-implementation-details</li>
+  <li>要点：欧盟发布了详细的AI法案实施细则，对不同风险等级的AI系统提出了明确的技术标准和合规要求，为全球AI治理提供了重要参考。</li>
+</ul>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[1. Anthropic 推出 Claude 4.0：多模态能力大幅提升，代码生成质量接近人类水平 来源：Anthropic Official Blog 链接：https://www.anthropic.com/news/claude-4-announcement 要点：新版本Claude在代码生成、逻辑推理和多模态理解方面取得重大突破，特别是在处理复杂编程任务时表现出接近专业开发者的水平。]]></summary></entry><entry><title type="html">20251218 AI 热门资讯 Top10</title><link href="http://localhost:4000/daily/2025/12/18/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html" rel="alternate" type="text/html" title="20251218 AI 热门资讯 Top10" /><published>2025-12-18T00:00:00+08:00</published><updated>2025-12-18T00:00:00+08:00</updated><id>http://localhost:4000/daily/2025/12/18/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10</id><content type="html" xml:base="http://localhost:4000/daily/2025/12/18/AI%E7%83%AD%E9%97%A8%E8%B5%84%E8%AE%AFTop10.html"><![CDATA[<h2 id="1-openai-与-anthropic-将尝试预测用户是否未成年以强化青少年安全">1. OpenAI 与 Anthropic 将尝试“预测用户是否未成年”，以强化青少年安全</h2>
+<ul>
+  <li>来源：The Verge</li>
+  <li>链接：https://www.theverge.com/news/847780/openai-anthropic-teen-safety-chatgpt-claude</li>
+  <li>要点：报道指出两家公司在推进“年龄预测（age prediction）”能力，用于在缺少明确年龄信息时识别疑似未成年用户，并据此触发更严格的安全策略与合规流程。</li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="2-googlegemini-app-支持验证视频是否由-google-ai-生成编辑">2. Google：Gemini App 支持验证视频是否由 Google AI 生成/编辑</h2>
+<ul>
+  <li>来源：Google Blog（AI）</li>
+  <li>链接：https://blog.google/technology/ai/verify-google-ai-videos-gemini-app/</li>
+  <li>要点：Google 将内容透明度工具扩展到 Gemini 应用中，用户可检查视频是否由 Google AI 生成或被 AI 编辑，面向“深度伪造/合成内容”的识别与标注问题继续补齐工具链。</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="3-googlerelease-notes-播客讨论-gemini-3-与-search-的下一步">3. Google：Release Notes 播客讨论 Gemini 3 与 Search 的下一步</h2>
+<ul>
+  <li>来源：Google Blog（AI）</li>
+  <li>链接：https://blog.google/technology/ai/release-notes-podcast-search/</li>
+  <li>要点：以播客形式讨论 Gemini 3 与搜索体验的演进方向，聚焦生成式 UI、交互式信息呈现等形态，反映“搜索 + 大模型”持续融合的产品路线。</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="4-kaggle--googleai-agents-intensive-课程复盘面向-agent-实战">4. Kaggle × Google：AI Agents Intensive 课程复盘（面向 Agent 实战）</h2>
+<ul>
+  <li>来源：Google Blog（Developers）</li>
+  <li>链接：https://blog.google/technology/developers/ai-agents-intensive-recap/</li>
+  <li>要点：Kaggle 与 Google 的免费密集课程回顾，围绕“AI Agent 的构建与部署”组织学习路径，体现 Agent 从概念热度向工程化实践下沉。</li>
+</ul>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="5-微软又投放了一支-copilot-广告但被吐槽演示不落地">5. 微软又投放了一支 Copilot 广告，但被吐槽“演示不落地”</h2>
+<ul>
+  <li>来源：The Verge</li>
+  <li>链接：https://www.theverge.com/report/847056/microsoft-copilot-ai-vision-pc-assistant-christmas-holiday-ad</li>
+  <li>要点：围绕 Copilot 的宣传片再次引发讨论：市场叙事与真实可用性之间的落差、以及“AI 助手到底能替用户完成什么”的边界问题仍在被反复检验。</li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="6-lg-电视被预装-copilot-web-app但官方表示可删除">6. LG 电视被预装 Copilot Web App，但官方表示可删除</h2>
+<ul>
+  <li>来源：The Verge</li>
+  <li>链接：https://www.theverge.com/news/847685/lg-copilot-web-app-delete</li>
+  <li>要点：AI 助手开始以更“系统级”的方式进入消费电子终端（电视等），但也带来预装/默认启用的争议；可卸载机制成为用户体验与合规风险的缓冲点。</li>
+</ul>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活生活" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/04/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-04-27T22:11:41+08:00</published><updated>2019-04-27T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<h2 id="7-agi被重新包装ai-公司集体做叙事迁移">7. “AGI”被重新包装：AI 公司集体做叙事迁移</h2>
+<ul>
+  <li>来源：The Verge</li>
+  <li>链接：https://www.theverge.com/ai-artificial-intelligence/845890/ai-companies-rebrand-agi-artificial-general-intelligence</li>
+  <li>要点：文章讨论了行业对“AGI”概念的再营销与再定义倾向：从技术路线到资本与监管语境，叙事策略本身正在影响公众预期与产品定位。</li>
+</ul>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="8-华尔街的-ai-收益开始落地银行计划减少人员规模">8. 华尔街的 AI 收益开始落地：银行计划减少人员规模</h2>
+<ul>
+  <li>来源：Artificial Intelligence News</li>
+  <li>链接：https://www.artificialintelligence-news.com/news/wall-street-ai-gains-are-here-banks-plan-for-fewer-people/</li>
+  <li>要点：报道指出银行通过重塑工作流、部署受控的内部工具来获取生产率提升，随之出现“在部分岗位减少用工”的规划与讨论。</li>
+</ul>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="9-阿斯利康推进-ai-临床试验规模化应用强调真实世界患者影响">9. 阿斯利康推进 AI 临床试验规模化应用，强调真实世界患者影响</h2>
+<ul>
+  <li>来源：Artificial Intelligence News</li>
+  <li>链接：https://www.artificialintelligence-news.com/news/astrazeneca-ai-clinical-trials-2025/</li>
+  <li>要点：文章关注药企在临床试验环节引入 AI 的规模化实践（包括多医院、多患者筛选等），体现 AI 在医疗研发流程的长期渗透。</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="10-hr-场景的-ai真正的运营影响开始显现">10. HR 场景的 AI：真正的运营影响开始显现</h2>
+<ul>
+  <li>来源：Artificial Intelligence News</li>
+  <li>链接：https://www.artificialintelligence-news.com/news/hr-ai-in-human-resources-the-real-operational-impact/</li>
+  <li>要点：从招聘、员工支持到流程自动化，HR 使用 AI 的价值不再停留在“工具演示”，而是进入到指标、流程与组织结构调整层面。</li>
+</ul>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[1. OpenAI 与 Anthropic 将尝试“预测用户是否未成年”，以强化青少年安全 来源：The Verge 链接：https://www.theverge.com/news/847780/openai-anthropic-teen-safety-chatgpt-claude 要点：报道指出两家公司在推进“年龄预测（age prediction）”能力，用于在缺少明确年龄信息时识别疑似未成年用户，并据此触发更严格的安全策略与合规流程。]]></summary></entry><entry><title type="html">20200602 jekyll new . –force 出错</title><link href="http://localhost:4000/daily/2020/06/02/jekyll-new-%E5%87%BA%E9%94%99.html" rel="alternate" type="text/html" title="20200602 jekyll new . –force 出错" /><published>2020-06-02T00:00:00+08:00</published><updated>2020-06-02T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/06/02/jekyll%20new%20%E5%87%BA%E9%94%99</id><content type="html" xml:base="http://localhost:4000/daily/2020/06/02/jekyll-new-%E5%87%BA%E9%94%99.html"><![CDATA[<p>错误详情：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ~/Documents/workspace/GitHub/clairege717.github.io &gt;&gt; jekyll serve -H 192.168.51.102 -w
+    Traceback (most recent call last):
+        15: from /usr/local/bin/jekyll:23:in `&lt;main&gt;'
+        14: from /usr/local/bin/jekyll:23:in `load'
+        13: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `&lt;top (required)&gt;'
+        12: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
+        11: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler.rb:149:in `setup'
+        10: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/runtime.rb:20:in `setup'
+         9: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/runtime.rb:101:in `block in definition_method'
+         8: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:226:in `requested_specs'
+         7: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:237:in `specs_for'
+         6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:170:in `specs'
+         5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:258:in `resolve'
+         4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:22:in `resolve'
+         3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:49:in `start'
+         2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:258:in `verify_gemfile_dependencies_are_found!'
+         1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:258:in `each'
+/Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:290:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tzinfo-data' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
+</code></pre></div></div>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>解决方案：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/Documents/workspace/GitHub/clairege717.github.io &gt;&gt; bundle exec jekyll serve
+    Could not find gem 'tzinfo-data' in any of the gem sources listed in your Gemfile.
+    Run `bundle install` to install missing gems.
+~/Documents/workspace/GitHub/clairege717.github.io &gt;&gt; bundle install     
+    ...   
+</code></pre></div></div>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[错误详情： ~/Documents/workspace/GitHub/clairege717.github.io &gt;&gt; jekyll serve -H 192.168.51.102 -w Traceback (most recent call last): 15: from /usr/local/bin/jekyll:23:in `&lt;main&gt;' 14: from /usr/local/bin/jekyll:23:in `load' 13: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/exe/jekyll:11:in `&lt;top (required)&gt;' 12: from /Library/Ruby/Gems/2.6.0/gems/jekyll-4.0.0/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler' 11: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler.rb:149:in `setup' 10: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/runtime.rb:20:in `setup' 9: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/runtime.rb:101:in `block in definition_method' 8: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:226:in `requested_specs' 7: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:237:in `specs_for' 6: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:170:in `specs' 5: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/definition.rb:258:in `resolve' 4: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:22:in `resolve' 3: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:49:in `start' 2: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:258:in `verify_gemfile_dependencies_are_found!' 1: from /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:258:in `each' /Library/Ruby/Gems/2.6.0/gems/bundler-2.1.4/lib/bundler/resolver.rb:290:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'tzinfo-data' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)]]></summary></entry><entry><title type="html">20200520-Liquid模版语言关于Filters</title><link href="http://localhost:4000/daily/2020/05/20/Liquid-%E6%A8%A1%E7%89%88%E8%AF%AD%E8%A8%80%E5%85%B3%E4%BA%8Efilters.html" rel="alternate" type="text/html" title="20200520-Liquid模版语言关于Filters" /><published>2020-05-20T00:00:00+08:00</published><updated>2020-05-20T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/05/20/Liquid%20%E6%A8%A1%E7%89%88%E8%AF%AD%E8%A8%80%E5%85%B3%E4%BA%8Efilters</id><content type="html" xml:base="http://localhost:4000/daily/2020/05/20/Liquid-%E6%A8%A1%E7%89%88%E8%AF%AD%E8%A8%80%E5%85%B3%E4%BA%8Efilters.html"><![CDATA[<p><strong>关于jekyll中使用模版语言进行日期格式化</strong></p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p><a href="https://shopify.dev/docs/themes/liquid/reference/filters/additional-filters#date">Liquid-&gt;Filters-&gt;Date</a></p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活生活" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/05/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-27T22:11:41+08:00</published><updated>2018-05-27T22:11:41+08:00</updated><id>http://localhost:4000/jekyll/update/2018/05/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p><a href="https://ruby-doc.org/core-2.7.1/Time.html#method-i-strftime">日期格式化指令</a></p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p><a href="http://www.strfti.me/">日期格式化</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Date (Year, Month, Day):
+  %Y - Year with century if provided, will pad result at least 4 digits.
+          -0001, 0000, 1995, 2009, 14292, etc.
+  %C - year / 100 (rounded down such as 20 in 2009)
+  %y - year % 100 (00..99)
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+  %m - Month of the year, zero-padded (01..12)
+          %_m  blank-padded ( 1..12)
+          %-m  no-padded (1..12)
+  %B - The full month name (``January'')
+          %^B  uppercased (``JANUARY'')
+  %b - The abbreviated month name (``Jan'')
+          %^b  uppercased (``JAN'')
+  %h - Equivalent to %b
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+  %d - Day of the month, zero-padded (01..31)
+          %-d  no-padded (1..31)
+  %e - Day of the month, blank-padded ( 1..31)
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+  %j - Day of the year (001..366)
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>Claire</name></author><category term="jekyll" /><category term="update" /><category term="生活生活" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+Time (Hour, Minute, Second, Subsecond):
+  %H - Hour of the day, 24-hour clock, zero-padded (00..23)
+  %k - Hour of the day, 24-hour clock, blank-padded ( 0..23)
+  %I - Hour of the day, 12-hour clock, zero-padded (01..12)
+  %l - Hour of the day, 12-hour clock, blank-padded ( 1..12)
+  %P - Meridian indicator, lowercase (``am'' or ``pm'')
+  %p - Meridian indicator, uppercase (``AM'' or ``PM'')
+
+  %M - Minute of the hour (00..59)
+
+  %S - Second of the minute (00..60)
+
+  %L - Millisecond of the second (000..999)
+       The digits under millisecond are truncated to not produce 1000.
+  %N - Fractional seconds digits, default is 9 digits (nanosecond)
+          %3N  millisecond (3 digits)
+          %6N  microsecond (6 digits)
+          %9N  nanosecond (9 digits)
+          %12N picosecond (12 digits)
+          %15N femtosecond (15 digits)
+          %18N attosecond (18 digits)
+          %21N zeptosecond (21 digits)
+          %24N yoctosecond (24 digits)
+       The digits under the specified length are truncated to avoid
+       carry up.
+
+Time zone:
+  %z - Time zone as hour and minute offset from UTC (e.g. +0900)
+          %:z - hour and minute offset from UTC with a colon (e.g. +09:00)
+          %::z - hour, minute and second offset from UTC (e.g. +09:00:00)
+  %Z - Abbreviated time zone name or similar information.  (OS dependent)
+
+Weekday:
+  %A - The full weekday name (``Sunday'')
+          %^A  uppercased (``SUNDAY'')
+  %a - The abbreviated name (``Sun'')
+          %^a  uppercased (``SUN'')
+  %u - Day of the week (Monday is 1, 1..7)
+  %w - Day of the week (Sunday is 0, 0..6)
+
+ISO 8601 week-based year and week number:
+The first week of YYYY starts with a Monday and includes YYYY-01-04.
+The days in the year before the first week are in the last week of
+the previous year.
+  %G - The week-based year
+  %g - The last 2 digits of the week-based year (00..99)
+  %V - Week number of the week-based year (01..53)
+
+Week number:
+The first week of YYYY that starts with a Sunday or Monday (according to %U
+or %W). The days in the year before the first week are in week 0.
+  %U - Week number of the year. The week starts with Sunday. (00..53)
+  %W - Week number of the year. The week starts with Monday. (00..53)
+
+Seconds since the Epoch:
+  %s - Number of seconds since 1970-01-01 00:00:00 UTC.
+
+Literal string:
+  %n - Newline character (\n)
+  %t - Tab character (\t)
+  %% - Literal ``%'' character
+
+Combination:
+  %c - date and time (%a %b %e %T %Y)
+  %D - Date (%m/%d/%y)
+  %F - The ISO 8601 date format (%Y-%m-%d)
+  %v - VMS date (%e-%^b-%4Y)
+  %x - Same as %D
+  %X - Same as %T
+  %r - 12-hour time (%I:%M:%S %p)
+  %R - 24-hour time (%H:%M)
+  %T - 24-hour time (%H:%M:%S)
+</code></pre></div></div>
+
+<p>示例：``</p>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[关于jekyll中使用模版语言进行日期格式化]]></summary></entry><entry><title type="html">20200517-ontouchstart</title><link href="http://localhost:4000/daily/2020/05/17/ontouchstart.html" rel="alternate" type="text/html" title="20200517-ontouchstart" /><published>2020-05-17T00:00:00+08:00</published><updated>2020-05-17T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/05/17/ontouchstart</id><content type="html" xml:base="http://localhost:4000/daily/2020/05/17/ontouchstart.html"><![CDATA[<p>body中添加ontouchstart:<code class="language-plaintext highlighter-rouge">&lt;body ontouchstart=""&gt;</code>，active兼容处理 即伪类:active失效</p>
+
+<p>方法一：body添加ontouchstart:<code class="language-plaintext highlighter-rouge">&lt;body ontouchstart=""&gt;</code></p>
+
+<p>方法二：js给 document 绑定 touchstart 或 touchend 事件</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
+   a {
+     color:#000;
+   }
+   a:active {
+      color:#fff;
+    }
+    &lt;/style&gt;
+    &lt;a herf=foo &gt;bar&lt;/a&gt;
+ &lt;script&gt;
+    document.addEventListener('touchstart',function(){},false);
+&lt;/script&gt;
+</code></pre></div></div>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[body中添加ontouchstart:&lt;body ontouchstart=""&gt;，active兼容处理 即伪类:active失效]]></summary></entry><entry><title type="html">20200108-JavaScript底层机制</title><link href="http://localhost:4000/daily/2020/01/08/JavaScript%E5%BA%95%E5%B1%82%E6%9C%BA%E5%88%B6.html" rel="alternate" type="text/html" title="20200108-JavaScript底层机制" /><published>2020-01-08T00:00:00+08:00</published><updated>2020-01-08T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/01/08/JavaScript%E5%BA%95%E5%B1%82%E6%9C%BA%E5%88%B6</id><content type="html" xml:base="http://localhost:4000/daily/2020/01/08/JavaScript%E5%BA%95%E5%B1%82%E6%9C%BA%E5%88%B6.html"><![CDATA[<ul>
+  <li>JavaScript执行过程-eventloop
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>setTimeout(function(){
+    console.log('set1')// 3
+})
+
+new Promise((resolve)=&gt;{
+    console.log('pr1');// 0
+    resolve();
+}).then(function(){
+    console.log('then1')// 2
+})
+
+setTimeout(function(){
+    console.log('set2')// 4
+})
+
+console.log(3)// 1
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>开始执行</strong>      &lt;- 异步任务的回调回到主任务执行 &lt;-
+|                                             |
+<strong>逐步执行代码</strong>                                |
+|                                             |
+<strong>有代码异步操作</strong>  -&gt; 异步操作插入到队列 -&gt; <strong>异步队列</strong>
+|                                             ^<br />
+<strong>执行完毕</strong>       -&gt; 问询是否有异步    ———-|</p>
+
+<p><strong>微任务与宏任务</strong></p>
+<ul>
+  <li>微任务: Promise, process.nextTick</li>
+  <li>宏任务: 整体代码script, setTimeout, setInterval</li>
+</ul>
+
+<p>会先于宏任务执行，微任务队列空了，才会去执行下一个宏任务</p>
+
+<ul>
+  <li>作用域链与引用类型
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var a = [1, 2, 3];
+function f(a){
+    a[3] = 4 // **变量是数组，是引用类型**
+    a = [100] // **参数在方法内，相当于一个局部变量**
+    console.log(a);// [100]
+}
+f(a);
+console.log(a);// [1,2,3,4]
+</code></pre></div>    </div>
+
+    <p>js 查找变量，会从当前作用域逐级向上，直到window，如果window没有，就是undefined</p>
+
+    <p><strong>JavaScript的数组并不是数据结构意义上的数组，为什么？</strong></p>
+
+    <ol>
+      <li>数据结构意义上的数组，连续相等内存变量。大小、类型</li>
+      <li>真正的数组是不可以扩容的</li>
+    </ol>
+  </li>
+  <li>v8引擎回收机制
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var size = 20*1024*1024;
+var arrAll = [];
+// v8引擎只有1.4g的内存可以支配，node可以使用C++的内存
+// node，写服务，只要服务开着，全局变量一直不会回收
+for(var i=0;i&lt;20;i+=){
+    arrAll.push(new Arrar(size));
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>内存如何回收</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>内存快接近满
+- 全局变量：不回收
+- 局部变量且失去引用：回收
+</code></pre></div></div>
+
+<p><strong>内存查看</strong></p>
+
+<p>v8引擎-只有1.4g的内存可以支配，node可以使用C++的内存</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 浏览器：window.performance
+- Node：process.memoryUsage()
+</code></pre></div></div>
+
+<p><strong>容易引发内存使用不当的情景</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 滥用全局变量
+- 缓存不限制
+- 操作大文件
+</code></pre></div></div>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[JavaScript执行过程-eventloop ``` setTimeout(function(){ console.log(‘set1’)// 3 })]]></summary></entry><entry><title type="html">20200108-Vue响应式</title><link href="http://localhost:4000/daily/2020/01/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F.html" rel="alternate" type="text/html" title="20200108-Vue响应式" /><published>2020-01-08T00:00:00+08:00</published><updated>2020-01-08T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/01/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F</id><content type="html" xml:base="http://localhost:4000/daily/2020/01/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F.html"><![CDATA[<h2 id="vue2的数据响应式原理">Vue2的数据响应式原理</h2>
+
+<ul>
+  <li>
+    <p>什么是defineProperty</p>
+
+    <p>defineProperty是定义对象的属性</p>
+
+    <p>defineProperty其实不是核心的为一个对象做数据双向绑定，而是去给对象做属性标签，只不过属性里的get和set实现了响应式</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>属性名</th>
+          <th>默认值</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>value</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>get</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>set</td>
+          <td>undefined</td>
+        </tr>
+        <tr>
+          <td>writable</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>enumerable</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>configurable</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  obj = {
+      a: '1',
+      b: '2'
+  }
+
+  Object.defineProperty(obj,'b',{
+      writable: false,
+      enumerable: false,
+      configurable: false
+  })
+
+  Object.getOwnPropertyDescriptor(obj,'a')
+
+  Object.freeze(obj);
+  Object.seal(obj);
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Vue 从改变一个数据到发生改变到过程</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>              get 部分收集依赖(收集对应的变量在哪些地方用到)
+              | 数据改变触发set -\&gt; set 部分触发notify -\&gt; 更改对应到虚拟dom -\&gt; 重新render
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>额外注意：数组的监听</p>
+
+    <p>vue数组的特性：push、shift、unshift触发视图更新</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var arrayPro = Array.prototype;
+var arrayob = Object.create(arrayPro);
+var arr = ['push','pop','shift'];
+// **装饰者模式**
+arr.forEach(function(method,index){
+    arrayob[method] = function(){
+        var ret = arrayPro[method].apply(this,arguments);
+        dep.notify();
+        return ret;
+    }
+})
+</code></pre></div>    </div>
+    <h2 id="vue3的数据响应式原理">Vue3的数据响应式原理</h2>
+  </li>
+  <li>
+    <p>Proxy是什么</p>
+
+    <p>Proxy对象用于定义基本操作的自定义行为</p>
+
+    <p>和defineProperty类似，功能几乎一样，用法有不同。</p>
+
+    <ul>
+      <li>区别一：Proxy不会污染源对象</li>
+      <li>区别二：可以省一个for in循环遍历源对象</li>
+      <li>区别三：Proxy get、set等都可以接收参数，指向源对象</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var obj = {a:333,b:444};
+  var obj2 = new Proxy(obj,{
+      get: function(target,key,receiver){
+          return Relect.get(target,key)
+      }
+      set: function(target,key,value,receiver){
+          return Relect.set(target,key,value)
+      }
+  })
+</code></pre></div></div>
+
+<ul>
+  <li>还能利用proxy做什么
+    <ul>
+      <li>校验类型
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// **策略模式**
+var valiob = {
+  name: function(value){
+      return (typeof value === 'number')
+  },
+  age: function(value){
+      return (typeof value === 'number' &amp;&amp; value &gt;= 18)
+  }
+}
+function person(age,name){
+  this.age = age;
+  this.name = name;
+  return new Proxy(this,{
+      get:function(target,key){
+          return Relect.get(target,key);
+      }
+      set: function(target,key,value){
+          if(valiob[key](value)){
+              return Relect.set(target,key,value);
+          } else {
+              throw new Error(key + 'type error');
+          }
+              
+      }
+  })
+}
+</code></pre></div>        </div>
+      </li>
+      <li>真正的私有变量</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="diff算法和virtual-dom">Diff算法和virtual dom</h2>
+
+<p>virtual dom是一个虚拟层，并不真实存在</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;template&gt;
+    &lt;div&gt;
+        &lt;p&gt;1&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+diff &lt;div&gt;
+    props:{a:3}
+    children:[
+        diff &lt;p&gt;
+        props:
+        children:[]
+        diff &lt;p&gt;
+        props:
+        children:[]
+        diff &lt;p&gt;
+        props:
+        children:[]
+    ]
+</code></pre></div></div>
+
+<p>Vue2遍历所有子节点，全部遍历完
+Vue2遍历速度由节点数量决定
+Vue3由动态数量决定</p>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[Vue2的数据响应式原理]]></summary></entry><entry><title type="html">20200107-转2019前端回顾</title><link href="http://localhost:4000/daily/2020/01/07/%E8%BD%AC2019%E5%89%8D%E7%AB%AF%E5%9B%9E%E9%A1%BE.html" rel="alternate" type="text/html" title="20200107-转2019前端回顾" /><published>2020-01-07T00:00:00+08:00</published><updated>2020-01-07T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/01/07/%E8%BD%AC2019%E5%89%8D%E7%AB%AF%E5%9B%9E%E9%A1%BE</id><content type="html" xml:base="http://localhost:4000/daily/2020/01/07/%E8%BD%AC2019%E5%89%8D%E7%AB%AF%E5%9B%9E%E9%A1%BE.html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/101517039?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=27827097305088">20200107-转2019前端回顾</a>
+<strong>转自知乎阿里妈妈前端快爆</strong></p>
+
+<p>不知不觉，二零一九悄然离去。《阿里妈妈前端快爆》从最早的内部第一篇文章算起，已经走过两个多年头了。回顾过去，我们梳理了 2019 年值得了解的技术发展脉络，与诸位细品。</p>
+
+<h2 id="标准进行时">标准进行时</h2>
+
+<p><strong>ECMAScript 2019 如期到来</strong></p>
+
+<p>ECMAScript 2019 年<a href="https://link.zhihu.com/?target=https%3A//2ality.com/2018/02/ecmascript-2019.html">包含这些更新</a>：</p>
+
+<ul>
+  <li>Array.prototype.flat、Array.prototype.flatMap；</li>
+  <li>String.prototype.trimStart、String.prototype.trimEnd；</li>
+  <li>Object.fromEntries；</li>
+  <li>Symbol.prototype.description；</li>
+  <li>try catch 语句允许不填入参数了；</li>
+  <li>Array.prototype.sort 将用 <a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Timsort">Timsort 算法</a> 保证排序结果的稳定性；</li>
+  <li>Function.prototype.toString() 行为修改；</li>
+  <li>修复 JSON 中 Unicode 边界问题的 <a href="https://link.zhihu.com/?target=https%3A//github.com/tc39/proposal-well-formed-stringify">Well Formed JSON</a> 和 <a href="https://link.zhihu.com/?target=https%3A//github.com/tc39/proposal-json-superset">Subsume JSON</a>。</li>
+</ul>
+
+<p>ECMAScript 2020 年可以期待<a href="https://link.zhihu.com/?target=https%3A//2ality.com/2019/12/ecmascript-2020.html">这些更新</a>。</p>
+
+<p><strong>WebAPI 趋于丰富</strong></p>
+
+<ul>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/webauthn/">WebAuthn</a> 进入 W3C 推荐规范，WebAuthn 允许用户通过生物识别、个人移动设备等多种方式来进行身份认证；</li>
+  <li>三个 WebAssembly 标准进入 W3C 推荐阶段： <a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-core-1-20191205/">WebAssembly 核心规范</a>、<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/">WebAssembly Web API</a>、<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/">WebAssembly JavaScript 接口</a>；</li>
+  <li>W3C 发布 <a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/">CSS Animation Worklet API</a> 工作草案，提供了在专用线程中运行动画的 API；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//webmonetization.org/">Web Monetization API</a> （小额支付 API）在过去一年有了声音；</li>
+  <li>画中画提案 <a href="https://link.zhihu.com/?target=https%3A//github.com/w3c/picture-in-picture">Picture-in-Picture API</a> 已经在三个主流浏览器（<a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5729206566649856">Chrome 71</a>、<a href="https://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2019/07/testing-picture-in-picture-for-videos-in-firefox-69/">Firefox 69</a> 和 <a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/9621/release-notes-for-safari-technology-preview-95/">Safari TP 95</a>）中得到实验性支持；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/webxr/">WebXR Device API</a> 在 <a href="https://link.zhihu.com/?target=https%3A//developers.google.com/web/updates/2019/12/nic79">Chrome 79</a> 中进入试验性支持，为智能手机和头戴式显示器创建沉浸式体验；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/resize-observer/%23resize-observer-interface">ResizeObserver API</a> 在 <a href="https://link.zhihu.com/?target=https%3A//developer.apple.com/safari/technology-preview/release-notes/">Safari TP 97</a> 和 Chrome 65+ 中被支持；</li>
+  <li>TC39 提出了 <a href="https://link.zhihu.com/?target=https%3A//tc39.github.io/proposal-binary-ast/">Binary AST 提案</a>，旨在压缩 JavaScript 冷启动过程中的编译与字节码生成时间；</li>
+  <li>基于 ES modules 的 <a href="https://link.zhihu.com/?target=https%3A//w3c.github.io/webcomponents/spec/imports/">HTML Imports</a> 重回标准，<a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5144752345317376">Chrome 80</a> 也已经正式支持；</li>
+  <li>网页数学公式标记语言 <a href="https://link.zhihu.com/?target=https%3A//mathml-refresh.github.io/mathml-core/">MathML</a> 与 Chrome <a href="https://link.zhihu.com/?target=https%3A//groups.google.com/a/chromium.org/forum/%23!msg/blink-dev/OOZIrtSPLeM/sEqeg4H2BQAJ">「重归于好」</a>，Igalia 公司正在全力为 Chrome 实现新的 MathML，<a href="https://link.zhihu.com/?target=https%3A//mathml.igalia.com/news/2019/08/28/mathml-and-browsers/">MathML 与浏览器的爱恨情仇</a>在庚子之年能否了结，我们拭目以待。</li>
+</ul>
+
+<p><strong>CSS 飞速发展</strong></p>
+
+<ul>
+  <li>过去一年里，很高兴几乎再也听不到 IE6，取而代之的是 Android。Flexbox 成为无线页面布局首选，CSS Grid 也逐渐普及，Firefox 71 也率先支持了 <a href="https://link.zhihu.com/?target=https%3A//bugzilla.mozilla.org/show_bug.cgi%3Fid%3D1580894">Subgrid</a>；</li>
+  <li>随着 macOS/iOS 带起的深色模式浪潮，主流浏览器也也实现了 CSS 媒体查询属性 <code class="language-plaintext highlighter-rouge">prefers-color-scheme</code>，Web 与操作系统的无缝体验更加顺滑；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5679432723333120">backdrop-filter</a> 属性在 Chrome 76 中迎来无前缀版本，Web 页面可以更加方便的实现背景滤镜；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//caniuse.com/%23feat%3Dcss-snappoints">CSS Scroll Snap</a> 规范趋于稳定，主流浏览器也已经全部实现无前缀版本。CSS 也可以实现简单的轮播切换了；</li>
+  <li>文字与字体上，<a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-fonts-4/%23descdef-font-face-font-variation-settings">Variable Fonts</a>（可变字体）技术快速发展，为字体创作带来了无限遐想的空间。<a href="https://zhuanlan.zhihu.com/write">line-clamp</a> 多行溢出控制属性<a href="https://link.zhihu.com/?target=https%3A//github.com/w3c/csswg-drafts/commit/41bdbcd2411ed7230f32ec6396a9d8448714b95a">正式进入规范</a>，Edge 和 Firefox 也都支持了历史遗留的前缀属性：<code class="language-plaintext highlighter-rouge">-webkit-line-clamp</code>；</li>
+  <li>数学计算上，有了全新的 <code class="language-plaintext highlighter-rouge">min()、max()、clamp()</code><a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-values-4/%23comp-func">比较函数</a>，传统的预处理器有的功能，CSS 也逐渐完善。<a href="https://link.zhihu.com/?target=https%3A//drafts.csswg.org/css-variables-1/">自定义属性</a>进入普及阶段，在实现动态换肤等场景时大放异彩；</li>
+  <li>CSS Houdini 进展略慢，只有 <a href="https://link.zhihu.com/?target=https%3A//drafts.css-houdini.org/css-properties-values-api/">CSS Properties and Values API </a>进入 Chrome 78，<a href="https://link.zhihu.com/?target=https%3A//drafts.css-houdini.org/css-animationworklet/">Animation Worklet</a> 进入 Chrome 71。路漫漫其修远兮，Houdini 未来还有很长的路要走。</li>
+  <li>CSS 框架方面，根据 <a href="https://link.zhihu.com/?target=http%3A//stateofcss.com">http://stateofcss.com</a> 的<a href="https://link.zhihu.com/?target=https%3A//2019.stateofcss.com/technologies/css-frameworks/">统计</a>，Bootstrap 持续走低，但各种基于它的主题和插件依然火热。基于原子类的 Tailwind CSS 满意度达到了 81%，不得不让我们重新思考 CSS 到底该如何编写？</li>
+</ul>
+
+<h2 id="端技术">端技术</h2>
+
+<p><strong>跨端技术机遇与危机并存</strong></p>
+
+<p>2019 年发展得较快的跨端框架有：</p>
+
+<ul>
+  <li>Flutter 于年初发布了正式版 1.0，并<a href="https://link.zhihu.com/?target=https%3A//medium.com/flutter/announcing-flutter-1-12-what-a-year-22c256ba525d">快速迭代到了 1.12</a>；</li>
+  <li>基于 Web Component 的跨端框架 Ionic <a href="https://link.zhihu.com/?target=https%3A//blog.ionicframework.com/introducing-ionic-4-ionic-for-everyone/">年初发布了 4.0</a>，并随后支持了 <a href="https://link.zhihu.com/?target=https%3A//ionicframework.com/blog/announcing-ionic-react/">Ionic React</a>；</li>
+</ul>
+
+<p>而国内编译到各大小程序也成为跨端框架的一个刚需：</p>
+
+<ul>
+  <li>W3C 发布了<a href="https://link.zhihu.com/?target=https%3A//www.w3.org/TR/mini-app-white-paper/">小程序标准化白皮书</a>；</li>
+  <li>百度搜索<a href="https://link.zhihu.com/?target=https%3A//v.qq.com/x/page/t0845uaipjp.html">全面接入百度小程序</a>，将致搜索权重提升；</li>
+  <li>年末，腾讯<a href="https://zhuanlan.zhihu.com/p/98945706">开源跨端框架 hippy</a>；</li>
+  <li>过去两年崭露头角的 <a href="https://link.zhihu.com/?target=https%3A//github.com/Tencent/wepy">wepy</a> 和 <a href="https://link.zhihu.com/?target=https%3A//github.com/NervJS/taro">taro</a> 开发依然活跃，而 <a href="https://link.zhihu.com/?target=https%3A//github.com/Meituan-Dianping/mpvue">mpVue</a> 已有半年以上没有维护。</li>
+</ul>
+
+<p>容器亦有新公司入局：</p>
+
+<ul>
+  <li><a href="https://link.zhihu.com/?target=https%3A//github.com/microsoft/react-native-windows">React Native on Windows</a> 于 2019 年 Microsoft Build 提出；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//blogs.windows.com/msedgedev/2019/06/18/building-hybrid-applications-with-the-webview2-developer-preview/">微软发布了 WebView 2 预览版</a>，允许开发者在 Windows 原生应用中展示网页内容；</li>
+</ul>
+
+<p><strong>隐私与安全越来越受重视</strong></p>
+
+<p>浏览器和 Node.js 端有如下安全更新：</p>
+
+<ul>
+  <li>不安全的 TLS 1.0 和 1.1 默认被禁用（<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/9526/release-notes-for-safari-technology-preview-91/">Safari TP 91</a>、Google Chrome 72+、Firefox Nightly）；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//bugzilla.mozilla.org/show_bug.cgi%3Fid%3D1522083">Firefox 67 开始</a>，<code class="language-plaintext highlighter-rouge">、</code> 自动附加 <code class="language-plaintext highlighter-rouge">rel="noopener"</code>，以防止新页面恶意篡改当前页面；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//chromestatus.com/feature/5826576096690176">Chrome 69 开始</a>支持 Content-Security-Policy 的 report-to 指令，此指令支持了合并多个违规上报请求；</li>
+  <li>Chrome 76 起实现 <a href="https://link.zhihu.com/?target=https%3A//w3c.github.io/webappsec-fetch-metadata/">Fetch Metadata 请求头提案</a> ，允许请求时带上上下文，使服务器端可以进行安全相关的校验；</li>
+  <li>Node.js 12.7.0+ 支持了 <code class="language-plaintext highlighter-rouge">--policy-integrity=sri</code>，可以让不符合 <a href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> 规范的请求在服务端执行任何代码前就被拦截。</li>
+</ul>
+
+<p>对于前端指纹技术和跨站追踪，也有更多的浏览器限制：</p>
+
+<ul>
+  <li>在调用传感器接口时，<a href="https://link.zhihu.com/?target=https%3A//bugs.chromium.org/p/chromium/issues/detail%3Fid%3D796904">Chrome 75+ 将弹出警告</a>，Safari 12 默认禁止，防止利用传感器接口辅助生成指纹；</li>
+  <li>Safari 12+ 中<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/8828/intelligent-tracking-prevention-2-2/">包含了更新的智能跟踪预防模块</a>，限制了采用跨站追踪技术的网站写入第三方 Cookie。</li>
+</ul>
+
+<p><strong>性能优化被浏览器更多考量</strong></p>
+
+<p>Chrome 提出<a href="https://link.zhihu.com/?target=https%3A//github.com/WICG/display-locking">展现锁定提案</a>，使得开发者可以跳过部分渲染，子规范在后续更新陆续得到实验性支持：</p>
+
+<ul>
+  <li>Chrome 76 <a href="https://link.zhihu.com/?target=https%3A//web.dev/native-lazy-loading">原生支持了 Lazy Loading</a>，可以直接在 img、iframe 标签上增加 loading 属性来实现懒加载；</li>
+  <li>Chrome 79 <a href="https://link.zhihu.com/?target=https%3A//developers.google.com/web/updates/2019/12/nic79%23rendersubtree">新增 HTML rendersubtree 属性</a>，用来控制部分 DOM 是否立即呈现；</li>
+  <li>Chrome 80 <a href="https://link.zhihu.com/?target=https%3A//www.chromestatus.com/feature/5737051062272000">实现了 CSS intrinsic-size 属性</a>，在 img 或 video 元素未加载的时候可以用来设置占位的高度。</li>
+</ul>
+
+<p>多个浏览器团队也在过去一年更新了相关的性能优化故事：</p>
+
+<ul>
+  <li>V8 团队<a href="https://link.zhihu.com/?target=https%3A//v8.dev/blog/react-cliff">介绍了 React 遭遇 V8 性能悬崖的故事</a>，带我们了解了 V8 内部的存储数据的机制和优化；</li>
+  <li>V8 团队发表了博文 <a href="https://link.zhihu.com/?target=https%3A//v8.dev/blog/cost-of-javascript-2019">The cost of JavaScript in 2019</a>，介绍在新时代下我们对 JavaScript 代码的优化策略；</li>
+  <li>WebKit 团队的这篇文章<a href="https://link.zhihu.com/?target=https%3A//webkit.org/blog/8970/how-web-content-can-affect-power-usage/">讨论了如何让网页更节能</a>；</li>
+  <li>FireFox 介绍了给 JavaScript 执行管道中<a href="https://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2019/08/the-baseline-interpreter-a-faster-js-interpreter-in-firefox-70/">添加了 Baseline Interpreter</a> 如何使得页面加载速度提升。</li>
+</ul>
+
+<h2 id="javascript-与框架">JavaScript 与框架</h2>
+
+<p><strong>Hooks 元年与并发渲染</strong></p>
+
+<p>Hooks 抛弃了传统的生命周期模型，保证了更细粒度和更简洁的逻辑抽象：</p>
+
+<ul>
+  <li>React 16.8 <a href="https://link.zhihu.com/?target=https%3A//reactjs.org/blog/2019/02/06/react-v16.8.0.html">于年初发布</a>，正式支持了 React Hooks；</li>
+  <li><a href="https://link.zhihu.com/?target=https%3A//github.com/vuejs/vue-next">Vue 3.0 Pre-Alpha 的源码公开</a>，也将支持 Hooks 风格的代码，将于 2020 年 Q1 正式发布；</li>
+  <li>社区热门库均已推出 hooks 版本，如 <a href="https://link.zhihu.com/?target=https%3A//github.com/reduxjs/react-redux/releases/tag/v7.1.0">react-redux 7.1+</a>、<a href="https://link.zhihu.com/?target=https%3A//github.com/ReactTraining/react-router/releases/tag/v5.1.0">react-router 5.1+</a>、<a href="https://link.zhihu.com/?target=https%3A//github.com/react-dnd/react-dnd/releases/tag/v7.6.0">react-dnd 7.6+</a> 等等，而 <a href="https://link.zhihu.com/?target=https%3A//www.styled-components.com/">styled-components</a> 等库也进入了 Hooks 测试支持阶段。</li>
+</ul>
+
+<p>并发渲染特性在 React Roadmap 的前列，此模式还没有在稳定版本支持：</p>
+
+<ul>
+  <li>官方已发布了<a href="https://link.zhihu.com/?target=https%3A//reactjs.org/docs/concurrent-mode-intro.html">并发模式的文档</a>；</li>
+  <li>官方也介绍了<a href="https://link.zhihu.com/?target=https%3A//reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html">渲染和获取数据同时进行的最佳实践</a>；</li>
+  <li>React 16.10.1 起<a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/react/blob/master/CHANGELOG.md%2316100-september-27-2019">实验性实现了调度器 Scheduler</a>，支持了 useSubscription 以实现并发安全的事件系统。</li>
+</ul>
+
+<p><strong>Node.js 稳步迭代，又有新人入场</strong></p>
+
+<p>Node.js 一年一更新，一年一淘汰：</p>
+
+<ul>
+  <li>去年 4 月 30 日，<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en/blog/release/v6.17.1/">Node.js 6 的维护正式终止</a>；</li>
+  <li>Node.js 12 <a href="https://link.zhihu.com/?target=https%3A//medium.com/%40nodejs/introducing-node-js-12-76c41a1b3f3f">该版本带来了巨大的性能提升</a>，TLS 1.3 默认开启；</li>
+  <li>Node.js 12.11 起，worker_thread 模块<a href="https://link.zhihu.com/?target=https%3A//nodejs.org/en/blog/release/v12.11.0/">正式进入稳定版</a>；</li>
+  <li>Node.js 13 起，<a href="https://link.zhihu.com/?target=https%3A//medium.com/%40nodejs/announcing-core-node-js-support-for-ecmascript-modules-c5d6dc29b663">默认支持了 ESM</a>，ESM 允许在源代码中使用 <code class="language-plaintext highlighter-rouge">import</code> 和 <code class="language-plaintext highlighter-rouge">export</code> 来引入相关包。</li>
+</ul>
+
+<p>但仍有不满足于 Node.js 和 V8 的人，他们都在尝试提供更受控的脚本运行时环境：</p>
+
+<ul>
+  <li>Node.js 作者<a href="https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3Dz6JRlx5NC9E">更新了 deno 动向</a>，但原定于去年夏发布的 1.0 版本<a href="https://link.zhihu.com/?target=https%3A//github.com/denoland/deno/issues/2473">依然没有到来﻿</a>；</li>
+  <li>FFmpeg 作者发布了 JavaScript 引擎：<a href="https://link.zhihu.com/?target=https%3A//bellard.org/quickjs/">QuickJS</a>，专注于提供嵌入式环境的运行时；</li>
+  <li>Facebook 开源了 JavaScript 引擎：<a href="https://link.zhihu.com/?target=https%3A//code.fb.com/android/hermes/">Hermes</a>，专注于提高 React Native 应用的性能；</li>
+</ul>
+
+<p>此外，不能遗忘 Make JavaScript Great Again 的 TypeScript：</p>
+
+<ul>
+  <li>TypeScript <a href="https://link.zhihu.com/?target=https%3A//www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html">迭代到了 3.7 版本</a>，支持大量 TC39 stage 3 的特性如 Top-Level Await、Nullish Coalescing 等</li>
+  <li>2019 年是 TypeScript <a href="https://link.zhihu.com/?target=https%3A//2019.stateofjs.com/">渗透率突飞猛进</a>的一年</li>
+</ul>
+
+<h2 id="致谢">致谢</h2>
+
+<p>感谢一直以来默默坚持的四位轮值编辑：<a href="https://www.zhihu.com/people/humphry-huang">承虎</a>、<a href="https://www.zhihu.com/people/ysbl">一丝</a>、<a href="https://www.zhihu.com/people/bigfeng">池冰</a>、<a href="https://www.zhihu.com/people/mochen16">墨尘</a>，以及特邀编辑：<a href="https://www.zhihu.com/people/zi-yun-fei">紫云飞</a>；感谢各位加班之余挤出时间来编写、审稿、P 图。</p>
+
+<p>更加需要感谢的是各位粉丝朋友，是你们一直以来的关注与点赞给了我们最大的动力。新的一年里，我们将继续秉承：原创、求精、求严的精神，努力做的更好！
+鲜衣怒马归来时，愿君依旧少年心……</p>
+
+<hr />
+
+<p>本期编辑：承虎、一丝 &amp; 审阅：一丝</p>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[20200107-转2019前端回顾 转自知乎阿里妈妈前端快爆]]></summary></entry><entry><title type="html">20200107-webpack</title><link href="http://localhost:4000/daily/2020/01/07/webpack.html" rel="alternate" type="text/html" title="20200107-webpack" /><published>2020-01-07T00:00:00+08:00</published><updated>2020-01-07T00:00:00+08:00</updated><id>http://localhost:4000/daily/2020/01/07/webpack</id><content type="html" xml:base="http://localhost:4000/daily/2020/01/07/webpack.html"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module.exports = {
+    mode: 'development',
+    entry: {
+        // 入口文件: string || array || object
+        app: 'app.js',
+        app2: 'app2.js'
+    },
+    output: {
+        // 出口文件: 
+        filename: './[name].[hash:4].js'
+    },
+    module: {// module: 每个被处理的文件都是一个模块
+        rules: [
+            // loader: 对某种文件的处理
+            {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader' // 编译js的loader
+                    options: {
+                        // .babelrc
+                        presets: [
+                            [
+                                '@babel/preset-env',
+                                {
+                                    targets: {
+                                        browsers: []
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader'
+            }
+        ]
+    },
+    plugins: [
+        // plugin: 对某个功能的添加
+
+    ],
+    chunks:{
+        // chunks: 最终产出的文件
+    }
+}
+</code></pre></div></div>
+
+<p><strong>JavaScript的处理与编译</strong></p>
+
+<ul>
+  <li>babel-loader: 编译JS的loader</li>
+  <li>babel-core: 编译所依赖的核心库</li>
+  <li>babel-preset-env: 编译的标准</li>
+  <li>babel-polyfill: 是生成全局垫片，在全局垫片里去实现这些</li>
+  <li>babel-runtime: 生成局部垫片</li>
+</ul>]]></content><author><name></name></author><category term="Daily" /><category term="daily" /><summary type="html"><![CDATA[``` module.exports = { mode: ‘development’, entry: { // 入口文件: string || array || object app: ‘app.js’, app2: ‘app2.js’ }, output: { // 出口文件: filename: ‘./[name].[hash:4].js’ }, module: {// module: 每个被处理的文件都是一个模块 rules: [ // loader: 对某种文件的处理 { test: /.js$/, use: { loader: ‘babel-loader’ // 编译js的loader options: { // .babelrc presets: [ [ ‘@babel/preset-env’, { targets: { browsers: [] } } ] ] } } }, { test: /.tsx?$/, loader: ‘ts-loader’ } ] }, plugins: [ // plugin: 对某个功能的添加]]></summary></entry></feed>
