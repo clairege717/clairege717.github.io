@@ -1,0 +1,11 @@
+# AI News Crawler - Python依赖清单
+# 爬取多个资讯网站的AI热门资讯
+
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+feedparser>=6.0.0
+
+# 备用解析器（可选）
+# selenium>=4.15.0
+# playwright>=1.40.0

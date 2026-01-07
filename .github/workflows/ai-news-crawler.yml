@@ -1,0 +1,108 @@
+name: AI News Crawler
+
+on:
+  # 定时触发：每天早上5:00 UTC (北京时间13:00)
+  schedule:
+    - cron: '0 5 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '爬取几天前的新闻 (默认: 1)'
+        required: false
+        default: '1'
+      force:
+        description: '强制重新生成'
+        required: false
+        default: 'false'
+
+jobs:
+  crawl-and-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整历史以便正确提交
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run AI News Crawler
+        id: crawler
+        run: |
+          cd ${{ github.workspace }}
+          # 爬取昨天的新闻
+          python scripts/ai_news_crawler.py --days 1 --output DailyAI
+          
+          # 检查是否生成了文件
+          YESTERDAY=$(date -d "yesterday" +%Y%m%d)
+          FILE_PATH="DailyAI/${YESTERDAY:0:4}/${YESTERDAY}_AI热门资讯_Top10.md"
+          
+          if [ -f "$FILE_PATH" ]; then
+            echo "file_exists=true" >> $GITHUB_OUTPUT
+            echo "file_path=$FILE_PATH" >> $GITHUB_OUTPUT
+            echo "AI资讯文件已生成"
+            cat "$FILE_PATH"
+          else
+            echo "file_exists=false" >> $GITHUB_OUTPUT
+            echo "警告: 未找到生成的资讯文件"
+            # 生成一个空文件以避免后续步骤失败
+            mkdir -p "DailyAI/${YESTERDAY:0:4}"
+            echo "# ${YESTERDAY} AI 热门资讯 Top10" > "$FILE_PATH"
+            echo "" >> "$FILE_PATH"
+            echo "收集时间：$(date '+%Y-%m-%d %H:%M')" >> "$FILE_PATH"
+            echo "" >> "$FILE_PATH"
+            echo "暂无新的AI资讯" >> "$FILE_PATH"
+          fi
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "检测到文件变更"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "没有文件变更"
+          fi
+      
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          YESTERDAY=$(date -d "yesterday" +%Y%m%d)
+          git add -A
+          git status
+          git commit -m "docs: 添加 ${YESTERDAY} AI热门资讯 Top10 [skip ci]"
+          git push
+          echo "已提交并推送到仓库"
+        env:
+          # 使用内置的 GITHUB_TOKEN 进行认证
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Show summary
+        run: |
+          echo ""
+          echo "========================================"
+          echo "AI News Crawler 执行完成"
+          echo "========================================"
+          echo "执行时间: $(date '+%Y-%m-%d %H:%M:%S')"
+          echo ""
+          echo "生成的资讯文件已保存到 DailyAI 文件夹"
+          echo ""
